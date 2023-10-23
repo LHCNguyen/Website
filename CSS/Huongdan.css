@@ -1,0 +1,221 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+   background: linear-gradient(60deg,#AA96DA,#C5FAD5,#FFFFD2);
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header{
+    background: linear-gradient(60deg,#AA96DA,#C5FAD5);
+    padding: .5rem 1.5rem;
+    align-items: center;
+}
+header.head > div > img {
+    width: 300px;
+    border-radius: 40%;
+}
+
+header.head > div > h1{
+    font-size: 3rem;
+    padding: 0;
+    text-shadow: 5px 5px 5px wheat;
+    animation: colorBackground 0.5s infinite;
+         -webkit-animation: colorBackground 5s infinite;
+         -moz-animation: colorBackground 5s infinite;
+         -o-animation: colorBackground 0.5s infinite
+}
+
+
+@keyframes colorBackground {
+    0% {
+    background-color: rgb(67, 202, 67);
+    color: lightblue;
+    }
+    50% {
+    background-color: rgb(224, 91, 224);
+    color: rgb(96, 201, 233);
+    }
+}
+
+section.menu{
+    background-color: rgba(14, 245, 226, 0.637);
+}
+
+section.menu>ul{
+    display: flex;
+    margin: 1px;
+}
+
+.clearfix{
+    overflow: hidden;
+}
+
+.left{
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+section.menu > ul >li{
+    list-style-type: none;
+    text-align: center;
+    min-width: 120px;
+    border-left: 1px solid white;
+    padding: 10px 15px;
+}
+
+section.menu >ul >li >a {
+    padding: 15px 8px;
+    text-decoration: none;
+}
+
+.content{
+    width: 80%;
+    margin: 0 auto;
+}
+
+section.content > div > img {
+    margin-left: 200px;
+}
+
+section.content > div > ol > img {
+    margin-left: 150px;
+}
+
+div.head > h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3px;
+}
+
+div.paragraphP > p{
+    margin: 0;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.colorbackground{
+    padding: 10px 30px;
+    background-color: lightgray;
+}
+
+mark{
+    background: linear-gradient(#eb2188,white);
+    padding: 5px;
+}
+
+div.colorbackground > p{
+    padding: 0;
+}
+div.paragraph > ul > li{
+    font-size: 20px;
+    padding: 10px;
+}
+
+.sub{
+    font-size: 20px;
+}
+
+.last{
+    background: #384a58;
+    color: azure;
+    padding: 55px 50px;
+}
+
+.backtop > a{
+    text-decoration: none;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    position: fixed;
+    bottom: 40px ;
+    right: 20px;
+    background: #9118c3;
+    border-radius: 50%;
+    justify-content: center;
+    display: flex;
+}
+
+div.footer > div > img {
+    width: 50%;
+}
+
+div.footer > div > p {
+    margin-bottom: 0;
+    font-size: 2rem;
+    padding: 5px;
+}
+
+div.footer > div > ul > li
+{
+    padding: 6px;
+}
+
+div.footer > div > ul > li > a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width:46.1875em) {
+
+    section.content > div > img {
+        margin-left: 0;
+    }
+    
+    section.content > div > ol > img {
+        margin-left: 0;
+    }
+
+    .last{
+        background: #384a58;
+        color: azure;
+        padding: 1rem 1rem;
+    }
+
+    div.paragraphP > img{
+        width: 80%;
+    }
+
+    div.paragraphP > ol > li > img{
+        width: 50%;
+    }
+    
+    footer > div.footer {
+        display: flex;
+        width: 100%;
+    }
+
+    footer > div.footer > div > p{
+        width: 100%;
+    }
+
+    footer > div.footer > div > img {
+        width: 100%;
+    }
+
+    footer > div.footer > div.content1 {
+        width: 50%;
+    }
+
+    footer > div.footer > div.content2 {
+        width: 50%;
+    }
+
+}
+  
+@media only screen and (min-width:46.25em) and (max-width: 63.9375em) {
+    
+}
+
+  

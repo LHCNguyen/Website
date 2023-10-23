@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN UP</title>
+    <link href="CSS/loginSignup.css" rel="stylesheet"/>
+    <link href="ConfirmSignup.html"><i class="signupbtn" rel="stylesheet">
+    <link href="ConfirmSignup.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet"/>
+</head>
+<body>
+    <form action="" > 
+        <div class="container">
+            <h1>Sign up</h1>
+            <p>Please enter your information below to sign up.</p>
+            <hr>
+
+            <label for="email">
+                <b>Email</b>.
+            </label>
+            <input type="text"  placeholder="Please enter your email address" name="email" required>
+            <label for="psw">
+                <b>Password</b>
+            </label>
+                <input type="text"  placeholder="Please enter your password" name="password" required>
+            <label for="passwordRepeat">
+                <b>Password Again</b>
+            </label>
+                <input type="password" placeholder="Please enter your password again" name="passwordRepeat" required>
+            <label>
+                <input type="checkbox" checked="checked" name="remember" style="margin-bottom: 15px">Remember Login
+            </label>
+
+            <div class="clearfix">
+                <button type="button" onclick="openPopup" 
+            class="signupbtn"><a href="ConfirmSignup.html">Sign up</a></button> 
+            </div>
+        </div>
+    </form>
+</body>
+</html>
