@@ -14,7 +14,7 @@ body {
 /* Header */
 header {
   background: linear-gradient(90deg, #a1c4fd, #c2e9fb);
-  padding: 1rem 3rem;
+  padding: 1rem 1.5rem; /* Giảm padding trên màn hình nhỏ */
   display: flex;
   align-items: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -46,17 +46,19 @@ header .title h1 {
 .menu ul {
   display: flex;
   list-style: none;
-  gap: 20px;
-  margin: 0 3rem;
+  gap: 15px; /* Giảm khoảng cách giữa các mục */
+  margin: 0 1.5rem; /* Giảm margin */
 }
 
 .menu ul li a {
   text-decoration: none;
   color: #333;
   font-weight: 600;
-  padding: 10px 20px;
+  padding: 8px 15px; /* Giảm padding */
   border-radius: 30px;
   transition: all 0.3s ease;
+  white-space: nowrap; /* Ngăn chữ bị ngắt dòng */
+  font-size: 0.9rem; /* Giảm font-size */
 }
 
 .menu ul li a:hover {
@@ -67,80 +69,80 @@ header .title h1 {
 /* Intro Section */
 .intro {
   text-align: center;
-  padding: 60px 20px;
+  padding: 40px 15px; /* Giảm padding */
   background: #fff;
-  border-radius: 15px;
-  margin: 20px auto;
-  max-width: 1200px;
+  border-radius: 10px; /* Giảm bo góc */
+  margin: 15px auto;
+  max-width: 100%; /* Đảm bảo không vượt quá màn hình */
 }
 
 .section-title {
-  font-size: 2.8rem;
+  font-size: 2.2rem; /* Giảm kích thước tiêu đề */
   color: #ff6b6b;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .section-description {
-  font-size: 1.2rem;
+  font-size: 1rem; /* Giảm kích thước mô tả */
   color: #666;
-  line-height: 1.8;
+  line-height: 1.6;
 }
 
 /* Skills Grid */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  padding: 40px 20px;
-  max-width: 1200px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Giảm min-width */
+  gap: 20px; /* Giảm khoảng cách */
+  padding: 30px 15px; /* Giảm padding */
+  max-width: 100%;
   margin: 0 auto;
 }
 
 .skill-card {
   background: #fff;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  padding: 30px;
+  border-radius: 10px; /* Giảm bo góc */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Giảm bóng đổ */
+  padding: 20px; /* Giảm padding */
   transition: transform 0.3s ease;
 }
 
 .skill-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-8px); /* Giảm hiệu ứng hover */
 }
 
 .skill-icon {
-  font-size: 2.5rem;
+  font-size: 2rem; /* Giảm kích thước biểu tượng */
   color: #ff6b6b;
-  margin-bottom: 20px;
-}
-
-.skill-title {
-  font-size: 1.8rem;
-  color: #333;
   margin-bottom: 15px;
 }
 
+.skill-title {
+  font-size: 1.5rem; /* Giảm kích thước tiêu đề */
+  color: #333;
+  margin-bottom: 10px;
+}
+
 .skill-content {
-  font-size: 1rem;
+  font-size: 0.9rem; /* Giảm kích thước nội dung */
   color: #555;
-  line-height: 1.8;
+  line-height: 1.6;
 }
 
 .skill-content h3 {
-  font-size: 1.4rem;
-  margin: 20px 0 10px;
+  font-size: 1.2rem; /* Giảm kích thước phụ đề */
+  margin: 15px 0 8px;
   color: #ff6b6b;
 }
 
 .skill-content ul {
   list-style: none;
-  margin: 10px 0;
+  margin: 8px 0;
 }
 
 .skill-content ul li {
   position: relative;
-  padding-left: 20px;
-  margin-bottom: 10px;
+  padding-left: 18px; /* Giảm padding-left */
+  margin-bottom: 8px;
 }
 
 .skill-content ul li:before {
@@ -148,6 +150,7 @@ header .title h1 {
   position: absolute;
   left: 0;
   color: #ff6b6b;
+  font-size: 0.9rem; /* Giảm kích thước dấu check */
 }
 
 .video-container {
@@ -155,7 +158,7 @@ header .title h1 {
   padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .video-container iframe {
@@ -164,24 +167,24 @@ header .title h1 {
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 8px; /* Giảm bo góc */
 }
 
 /* Back to Top */
 .backtop > a {
   text-decoration: none;
   color: white;
-  width: 60px;
-  height: 60px;
+  width: 50px; /* Giảm kích thước */
+  height: 50px;
   position: fixed;
-  bottom: 40px;
-  right: 40px;
+  bottom: 15px; /* Giảm khoảng cách */
+  right: 15px;
   background: #ff6b6b;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Giảm bóng đổ */
   transition: all 0.4s ease;
   opacity: 0;
   visibility: hidden;
@@ -189,62 +192,150 @@ header .title h1 {
 
 .backtop > a:hover {
   background: #e84118;
-  transform: rotate(360deg) scale(1.2);
+  transform: rotate(360deg) scale(1.1); /* Giảm hiệu ứng scale */
 }
 
 /* Footer */
 .footer {
   background: linear-gradient(90deg, #2c3e50, #3498db);
   color: white;
-  padding: 40px 20px;
+  padding: 20px 15px; /* Giảm padding */
   text-align: center;
 }
 
 .lastimage img {
-  max-width: 150px;
-  margin-bottom: 20px;
+  max-width: 120px; /* Giảm kích thước logo */
+  margin-bottom: 10px;
 }
 
 .copyright span {
-  font-size: 0.9rem;
-  line-height: 1.6;
+  font-size: 0.8rem; /* Giảm kích thước chữ */
+  line-height: 1.5;
 }
 
-/* Responsive */
+/* Responsive Design */
 @media (max-width: 768px) {
   header {
       flex-direction: column;
-      padding: 1rem;
+      padding: 1rem 1rem;
+      text-align: center;
   }
 
   header .img img {
-      width: 120px;
+      width: 100px; /* Giảm kích thước logo */
   }
 
   header .title h1 {
-      font-size: 2rem;
+      font-size: 1.8rem; /* Giảm kích thước tiêu đề */
+  }
+
+  .menu {
+      flex-direction: column;
+      align-items: center;
   }
 
   .menu ul {
       flex-direction: column;
       gap: 10px;
       margin: 0;
+      width: 100%;
   }
 
   .menu ul li a {
-      display: block;
+      padding: 8px 15px;
+      font-size: 0.9rem;
+      width: 100%;
       text-align: center;
   }
 
   .intro {
-      padding: 40px 20px;
+      padding: 30px 10px;
   }
 
   .section-title {
-      font-size: 2.2rem;
+      font-size: 1.8rem;
+  }
+
+  .section-description {
+      font-size: 0.9rem;
   }
 
   .skills-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr; /* Hiển thị 1 cột */
+      padding: 20px 10px;
+  }
+
+  .skill-card {
+      padding: 15px;
+  }
+
+  .skill-title {
+      font-size: 1.3rem;
+  }
+
+  .skill-content {
+      font-size: 0.85rem;
+  }
+
+  .skill-content h3 {
+      font-size: 1.1rem;
+  }
+
+  .video-container {
+      padding-bottom: 60%; /* Điều chỉnh tỷ lệ video */
+  }
+}
+
+@media (max-width: 480px) {
+  header .img img {
+      width: 80px;
+  }
+
+  header .title h1 {
+      font-size: 1.5rem;
+  }
+
+  .menu ul li a {
+      padding: 6px 10px;
+      font-size: 0.8rem;
+  }
+
+  .section-title {
+      font-size: 1.6rem;
+  }
+
+  .section-description {
+      font-size: 0.85rem;
+  }
+
+  .skill-icon {
+      font-size: 1.8rem;
+  }
+
+  .skill-title {
+      font-size: 1.2rem;
+  }
+
+  .skill-content {
+      font-size: 0.8rem;
+  }
+
+  .skill-content h3 {
+      font-size: 1rem;
+  }
+
+  .backtop > a {
+      width: 40px;
+      height: 40px;
+      bottom: 10px;
+      right: 10px;
+  }
+
+  .lastimage img {
+      max-width: 100px;
+  }
+
+  .copyright span {
+      font-size: 0.7rem;
   }
 }

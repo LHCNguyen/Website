@@ -2,12 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', Arial, Helvetica, sans-serif; /* Font hiện đại */
-    scroll-behavior: smooth; /* Cuộn mượt mà */
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
-    background: linear-gradient(45deg, #a1c4fd, #c2e9fb, #d4fc79); /* Gradient nền mềm mại */
+    background: linear-gradient(45deg, #a1c4fd, #c2e9fb, #d4fc79);
     color: #333;
 }
 
@@ -21,8 +21,8 @@ body {
 
 /* Header */
 header {
-    background: linear-gradient(90deg, #a1c4fd, #c2e9fb); /* Gradient nhẹ nhàng */
-    padding: 1rem 3rem;
+    background: linear-gradient(90deg, #a1c4fd, #c2e9fb);
+    padding: 1rem 2rem;
     align-items: center;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     position: sticky;
@@ -37,13 +37,13 @@ header {
 }
 
 header.head > div > img {
-    width: 200px; /* Giảm kích thước để cân đối */
-    border-radius: 50%; /* Bo tròn hoàn toàn */
+    width: 200px;
+    border-radius: 50%;
     transition: transform 0.5s ease;
 }
 
 header.head > div > img:hover {
-    transform: scale(1.1) rotate(5deg); /* Hiệu ứng phóng to và xoay nhẹ */
+    transform: scale(1.1) rotate(5deg);
 }
 
 header.head > div > h1 {
@@ -68,7 +68,7 @@ section.menu {
 section.menu > ul {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
     margin: 0;
 }
 
@@ -79,7 +79,7 @@ section.menu > ul > li {
 
 section.menu > ul > li > a {
     display: block;
-    padding: 12px 20px;
+    padding: 10px 18px;
     text-decoration: none;
     color: #333;
     font-weight: 600;
@@ -87,6 +87,7 @@ section.menu > ul > li > a {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    white-space: nowrap; /* Ngăn chữ bị ngắt dòng */
 }
 
 section.menu > ul > li > a:before {
@@ -130,7 +131,7 @@ section.menu > ul > li > a:hover {
 .content {
     width: 85%;
     max-width: 1200px;
-    margin: 40px auto;
+    margin: 30px auto;
     animation: fadeIn 1.5s ease-in-out;
 }
 
@@ -168,26 +169,26 @@ div.paragraphP > p {
 }
 
 .colorbackground {
-    padding: 20px 40px;
+    padding: 20px 30px;
     background: rgba(255, 255, 255, 0.8);
-    border-radius: 15px;
+    border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
 
 mark {
     background: linear-gradient(90deg, #ff6b6b, #feca57);
-    padding: 5px 10px;
+    padding: 4px 8px;
     border-radius: 5px;
     color: white;
 }
 
 div.paragraph > ul > li {
     font-size: 1.2rem;
-    padding: 10px 0;
+    padding: 8px 0;
     list-style-type: none;
     position: relative;
-    padding-left: 30px;
+    padding-left: 25px;
 }
 
 div.paragraph > ul > li:before {
@@ -203,11 +204,38 @@ div.paragraph > ul > li:before {
     color: #666;
 }
 
+/* Video Container */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+/* Hiệu ứng cho hình ảnh */
+img.wow {
+    transition: transform 0.5s ease;
+}
+
+img.wow:hover {
+    transform: scale(1.05);
+}
+
 /* Footer */
 .last {
-    background: linear-gradient(90deg, #2c3e50, #3498db); /* Gradient chân trang */
+    background: linear-gradient(90deg, #2c3e50, #3498db);
     color: white;
-    padding: 60px 40px;
+    padding: 40px 20px;
     box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -250,11 +278,11 @@ div.footer > div > ul > li > a:hover {
 .backtop > a {
     text-decoration: none;
     color: white;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     position: fixed;
-    bottom: 40px;
-    right: 40px;
+    bottom: 20px;
+    right: 20px;
     background: #ff6b6b;
     border-radius: 50%;
     display: flex;
@@ -269,31 +297,43 @@ div.footer > div > ul > li > a:hover {
     transform: rotate(360deg) scale(1.2);
 }
 
-/* Responsive */
-@media only screen and (max-width: 46.1875em) {
+/* Responsive Design */
+@media only screen and (max-width: 740px) { /* Dưới 46.25em (740px) */
     header {
-        padding: 1rem 1.5rem;
+        flex-direction: column;
+        padding: 1rem;
+        text-align: center;
     }
 
     header.head > div > img {
-        width: 150px;
+        width: 120px; /* Giảm kích thước logo */
     }
 
     header.head > div > h1 {
-        font-size: 1.8rem;
+        font-size: 1.8rem; /* Giảm kích thước tiêu đề */
+    }
+
+    section.menu {
+        padding: 0.5rem 0;
     }
 
     section.menu > ul {
         flex-direction: column;
-        gap: 10px;
+        gap: 8px;
+        margin: 0;
+        width: 100%;
     }
 
     section.menu > ul > li > a {
-        padding: 10px;
+        padding: 8px 15px;
+        font-size: 0.9rem;
+        width: 100%;
+        text-align: center;
     }
 
     .content {
         width: 90%;
+        margin: 20px auto;
     }
 
     div.head > h1 {
@@ -302,22 +342,117 @@ div.footer > div > ul > li > a:hover {
 
     div.paragraphP > p {
         font-size: 1rem;
+        line-height: 1.6;
     }
 
-    div.footer > div > p {
-        font-size: 1.5rem;
+    .colorbackground {
+        padding: 15px 20px;
+    }
+
+    div.paragraph > ul > li {
+        font-size: 1rem;
+        padding-left: 20px;
+    }
+
+    .sub {
+        font-size: 1rem;
+    }
+
+    .video-container {
+        padding-bottom: 60%; /* Điều chỉnh tỷ lệ video */
+        margin: 15px 0;
+    }
+
+    .last {
+        padding: 30px 15px;
+    }
+
+    .footer.flex {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    div.footer > div {
+        width: 100%;
     }
 
     div.footer > div > img {
         width: 100px;
     }
 
-    .last {
-        padding: 30px 20px;
+    div.footer > div > p {
+        font-size: 1.5rem;
+    }
+
+    div.footer > div > ul > li {
+        padding: 6px 0;
+    }
+
+    div.footer > div > ul > li > a {
+        font-size: 0.9rem;
+    }
+
+    .backtop > a {
+        width: 40px;
+        height: 40px;
+        bottom: 15px;
+        right: 15px;
     }
 }
 
-@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+@media only screen and (max-width: 480px) { /* Dưới 480px (màn hình rất nhỏ) */
+    header.head > div > img {
+        width: 100px;
+    }
+
+    header.head > div > h1 {
+        font-size: 1.5rem;
+    }
+
+    section.menu > ul > li > a {
+        padding: 6px 10px;
+        font-size: 0.85rem;
+    }
+
+    div.head > h1 {
+        font-size: 1.8rem;
+    }
+
+    div.paragraphP > p {
+        font-size: 0.9rem;
+    }
+
+    .colorbackground {
+        padding: 10px 15px;
+    }
+
+    div.paragraph > ul > li {
+        font-size: 0.9rem;
+        padding-left: 18px;
+    }
+
+    .sub {
+        font-size: 0.9rem;
+    }
+
+    div.footer > div > img {
+        width: 80px;
+    }
+
+    div.footer > div > p {
+        font-size: 1.3rem;
+    }
+
+    div.footer > div > ul > li > a {
+        font-size: 0.85rem;
+    }
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1024px) { /* Từ 46.25em đến 63.9375em */
+    header {
+        padding: 1rem 1.5rem;
+    }
+
     header.head > div > img {
         width: 180px;
     }
@@ -327,49 +462,23 @@ div.footer > div > ul > li > a:hover {
     }
 
     section.menu > ul {
-        gap: 15px;
+        gap: 12px;
+    }
+
+    section.menu > ul > li > a {
+        padding: 10px 15px;
+        font-size: 0.95rem;
     }
 
     .content {
         width: 90%;
     }
-}
-/* Responsive video container */
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%; /* Tỷ lệ 16:9 */
-    height: 0;
-    overflow: hidden;
-    margin: 20px 0;
-}
 
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-}
-
-/* Hiệu ứng cho các hình ảnh */
-img.wow {
-    transition: transform 0.5s ease;
-}
-
-img.wow:hover {
-    transform: scale(1.05);
-}
-
-/* Đảm bảo footer responsive */
-@media only screen and (max-width: 46.1875em) {
-    .footer.flex {
-        flex-direction: column;
-        gap: 30px;
+    div.head > h1 {
+        font-size: 2.5rem;
     }
 
-    .content1, .content2 {
-        width: 100%;
-        text-align: center;
+    div.paragraphP > p {
+        font-size: 1.1rem;
     }
 }
