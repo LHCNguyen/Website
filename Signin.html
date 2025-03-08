@@ -4,41 +4,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOGIN</title>
-    <link href="CSS/Signin.css" rel="stylesheet">
+    <title>Login - TOEIC</title>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet"/>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
+
+    <link href="CSS/Signin.css" rel="stylesheet"/>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <script src="JS/huongdan.js"></script>
 </head>
 <body>
-    <section>
-        <div class="img-bg">
-            <img src="images/OIP.jpg" alt="image">
+    <!-- Header -->
+    <header id="top" class="head flex wow animate__slideInDown">
+        <div class="img wow animate__zoomInDown">
+            <img src="images/Banner.png" alt="TOEIC Banner">
         </div>
-        <div class="container">
-            <div class="form">
-                <h2>LOGIN</h2>
+        <div class="title wow animate__zoomInDown">
+            <h1>Login to TOEIC</h1>
+        </div>
+        <div></div>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav class="menu clearfix wow animate__lightSpeedInLeft">
+        <ul class="left">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="TOIEC Skills Practice.html"><i class="fa-solid fa-book"></i> TOEIC Skills Practicing</a></li>
+            <li><a href="#"><i class="fa-solid fa-lightbulb"></i> Tips</a></li>
+            <li><a href="Huongdan.html"><i class="fa-solid fa-book-open"></i> Hướng dẫn</a></li>
+        </ul>
+        <ul class="right">
+            <li><a href="Signin.html"><i class="fa-solid fa-arrow-right-to-bracket"></i> Sign in</a></li>
+            <li><a href="loginSignup.html"><i class="fa-solid fa-id-card"></i> Sign up</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="login-section">
+        <div class="container wow animate__fadeInUp">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>Login</h2>
+                    <p>Access your TOEIC account to start practicing.</p>
+                </div>
                 <form action="">
-                    <div class="input-form  ">
-                        <span>Username</span>
-                        <input type="text" placeholder="ID...">
+                    <div class="input-form">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" placeholder="Enter your ID..." required>
                     </div>
                     <div class="input-form">
-                        <span>Password</span>
-                        <input type="text"  placeholder="Password...">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter your password..." required>
                     </div>
-                    <div class="Remember Login">
-                        <label><input type="checkbox" name="">Remember Login</label>
+                    <div class="remember-login">
+                        <label><input type="checkbox" name="remember"> Remember me</label>
                     </div>
                     <div class="input-form">
-                        <input type="submit" value="Login">
+                        <button type="submit" class="login-btn">Login</button>
                     </div>
                 </form>
-                <h3>Want to sign in by using?</h3>
-                <ul class="icon">
-                    <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
-                    <li><i class="fa fa-google" aria-hidden="true"></i></li>
-                    <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
-                </ul>
+                <div class="social-login">
+                    <h3>Or sign in using</h3>
+                    <ul class="icon">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+                <p class="signup-link">Don't have an account? <a href="loginSignup.html">Sign up here</a></p>
             </div>
         </div>
-    </section>
+        <div class="img-bg wow animate__fadeInLeft">
+            <img src="images/OIP.jpg" alt="Background Image">
+        </div>
+    </main>
+
+    <!-- Back to Top Button -->
+    <div class="backtop">
+        <a href="#top"><i class="fa-solid fa-arrow-up-long"></i></a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer wow animate__fadeInUp">
+        <div class="lastimage">
+            <img src="images/toeicLast.png" alt="TOEIC Footer Image"/>
+        </div>
+        <div class="copyright">
+            <span>Copyright © 2021 by ETS. All rights reserved. ETS, the ETS logo, PROPELL, TOEIC and TOEIC BRIDGE are registered trademarks of ETS in the United States and other countries. All other trademarks are the property of their respective owners.</span>
+        </div>
+    </footer>
 </body>
 </html>

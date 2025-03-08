@@ -1,199 +1,221 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Hướng dẫn luyện thi TOEIC</title>
-        <link href="CSS/Huongdan.css" rel="stylesheet"/>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet"/>
-        <link href="images/imgHead.png" rel="shortcut icon"/>
-        <link rel="stylesheet" href="CSS/animate.css"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js?fbclid=IwAR3h66J6b8ncL2IlHJ7vCWQVhRXrRQRyGMjKQ2RwyhEWyW3gYLUUfCErBDQ"/>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
-        <script src="JS/jquey-3.6.0.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-        <script src="JS/huongdan.js"></script>
-    </head>
-    <body>
-        <header id="top" class="head flex wow animate__slideInDown">
-           <div class="img wow animate__zoomInDown">
-                <img src="images/Banner.png" alt="toeic"/>
-           </div>
-           <div class="wow animate__zoomInDown">
-                <h1>WEB LUYỆN THI TOEIC</h1>
-           </div>
-           <div></div>
-        </header>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hướng dẫn luyện thi TOEIC</title>
 
-        <section class="menu clearfix wow animate__lightSpeedInLeft">
-            <ul class="left">
-                <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
-                <li><a href="TOIEC Skills Practice.html"><i class="fa-solid fa-book"></i>TOIEC Skills Practicing</a></li>
-                <li><a href="#"><i class="fa-solid fa-lightbulb"></i>Tips</a></li>
-                <li><a href="#"><i class="fa-solid fa-book-open"></i>Hướng dẫn</a></li>
-            </ul>
-            <ul class="right">
-                <li><a href="Signin.html"><i class="fa-solid fa-arrow-right-to-bracket"></i>Đăng nhập</a></li>
-                <li><a href="loginSignup.html"><i class="fa-solid fa-id-card"></i>Đăng kí</a></li>
-            </ul>
-        </section>
+    <!-- Favicon -->
+    <link href="images/imgHead.png" rel="shortcut icon"/>
 
-        <section class="content">
-            <div class="head wow animate__backInLeft">
-                <h1>LUYỆN THI TOEIC</h1>
-            </div>
-            
-            <div class="paragraphP colorbackground wow animate__flipInX">
-                <p>
-                    Luyện thi TOEIC là một quá trình mà tất cả các sinh viên đều phải trải qua, đây như là điều kiện cần thiết để sinh viên ra trường. Vậy luyện thi TOEIC như thế nào cho đạt hiệu quả cao trong thời gian ngắn? Chúng ta nên luyện thi ở nhà hay ở trung tâm? Bạn đừng quá lo lắng! Bài viết sau đây, AnhleEnglish sẽ giải quyết hết tất cả các vấn đề bạn đang gặp phải khi không biết nên luyện thi TOEIC bắt đầu từ đâu.
-                </p>
-            </div>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
-            <div class="paragraphP wow">
-                <h1><mark>Tổng quan về kì thi TOEIC</mark></h1>
-                <img src="images/tongquanvekithi.png" alt="image" class="wow animate__zoomIn"/>
-                <p class="wow animate__backInUp">TOEIC là bài thi đánh giá khả năng Tiếng Anh xuất phát từ Nhật Bản, cụ thể là tại cơ sở ETS vào năm 1979. Trải qua hơn 30 năm đến nay thì kỳ thi TOEIC đang dần phổ biến trên thế giới trong môi trường công sở. Theo số liệu mới nhất gần đây, tại Việt Nam có hơn 127 trường đại học, cao đẳng chọn TOEIC làm chuẩn đầu ra. Không chỉ dừng ở số liệu này mà hơn 350 doanh nghiệp tập đoàn còn dùng TOEIC làm chuẩn đánh giá tuyển dụng.
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet"/>
 
-                    TOEIC là chứng chỉ quốc tế về trình độ Tiếng Anh và có một số giá trị nhất định như:</p>
-                <ul class="wow animate__backInUp">
-                    <li>Chứng chỉ giúp du học</li>
-                    <li>Mở rộng có cơ hội việc làm</li>
-                    <li>Khả năng giao tiếp tiếng anh</li>
-                </ul>
-                <p class="wow animate__backInUp">Ngoài ra, tiêu chuẩn đầu ra của các trường Đại học, Cao đẳng: Hiện nay, để đủ điều kiện ra trường thì chứng chỉ Toeic là một điều kiện cần và đủ của hầu hết các bạn sinh viên. Các bạn phải đạt chứng chỉ Toeic với số điểm từ 450 trở lên. Vì thế, có thể nói rằng Chứng chỉ Toeic có vai trò vô cùng quan trọng.</p>
-            </div>
+    <!-- Animate.css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
 
-            <div>
-                <h1><mark>Xác định trình độ tiếng anh trước khi luyện thi TOEIC</mark></h1>
-                <p class="wow animate__backInUp">Để quá trình luyện thi TOEIC đạt hiệu quả cao, bạn cần xác định được trình độ Tiếng Anh của bản thân trước khi luyện thi TOEIC. Việc xác định chính xác trình độ trước khi luyện thi TOEIC sẽ giúp cho kế hoạch được lập ra rõ ràng và không mất quá nhiều thời gian, tài liệu giáo trình cũng phù hợp với bản thân hơn. Ngoài ra, việc chúng ta xác định trình độ Tiếng Anh mình đang như thế nào ngay từ đầu còn giúp bản thân nhận ra đâu là thế mạnh, đâu là điểm yếu bản thân cần cải thiện.</p>
-                <img class="wow animate__zoomIn" src="images/kiemtratoeic.png" alt="images" class="pic wow animate__backInDown"/>
-                <p class="wow animate__backInUp">Toeic là một kỳ thi sẽ có 2 kỹ năng cần thiết Nghe và Đọc Hiểu được xem là rất quan trọng . Và để xác định chính xác trình độ về TOEIC bạn có thể luyện tập các đề thi online có trên AnhleEnglish. Trong quá trình làm đề thi thử cần tự đánh giá ở một số mục sau:</p>
-                <ul class="wow animate__backInUp">
-                    <li>Mức điểm TOEIC hiện tại của bạn là bao nhiêu → để biết số điểm đó cách mục tiêu của bạn là  bao nhiêu</li>
-                    <li>Trong TOEIC 4 kỹ năng, bạn đang có thế mạnh về phần nào → Phần nào yếu thì dành thời gian rèn luyện nhiều hơn</li>
-                    <li>Từ vựng và ngữ pháp bạn đã nắm vững được bao nhiêu → để bổ sung những kiến thức còn thiếu </li>
-                </ul>
-                <p class="wow animate__backInUp">Sau khi làm đề thi thử TOEIC xong, nếu bạn cảm thấy mình đã đạt được mục tiêu thì có thể củng cố thêm kiến thức bằng các lỗi sai trong bài thi. Đề thi có xác suất câu nhất định theo trình độ từ dễ đến khó nên dù lần thi thử đạt được kết quả khả quan thì cũng chưa hẳn thi thật bạn sẽ đạt được kết quả cao như vậy.</p>
-                <p class="wow animate__backInUp">Và nếu như trường hợp kết quả thi thử quá tệ, thì bạn cần phải xác định các vấn đề chính như sau:</p>
-                <ul class="wow animate__backInUp">
-                    <li>Kỹ năng nào là yếu nhất</li>
-                    <li>Kỹ năng mạnh nhất mà bạn có</li>
-                    <li>Lỗi sai hay gặp </li>
-                    <li>Đưa ra lộ trình ôn thi TOEIC hiệu quả</li>
-                    <li>Tiếp tục giải đề thi để xác định được thực lực bản thân</li>
-                </ul>
-            </div>
+    <!-- Custom CSS -->
+    <link href="CSS/Huongdan.css" rel="stylesheet"/>
 
-            <div class="paragraphP">
-                <h1><mark>Luyện Đề thi TOEIC</mark></h1>
-                <p class="wow animate__backInUp">Luyện giải đề thi TOEIC là cách hiệu quả nhất để bạn có thể tiếp cận và làm quen với đề thi nhiều hơn và áp dụng được những kiến thức Tiếng Anh của mình. Để luyện giải đề thi TOEIC, bạn có thể luyện giải bằng cách online, offline có thầy cô hướng dẫn hoặc đơn giản là giải đề thông qua sách.</p>
-                <p class="wow animate__backInUp">Hiện nay trên thị trường thì sách để giải đề thi TOEIC khá phổ biến. Nhưng có một nhược điểm khi mà bạn phải tự chấm điểm bằng tay và đôi lúc có nhiều cuốn sách chỉ đưa ra đáp án nhưng không hề giải thích tại sao lại lựa chọn đáp án đó, nên nhiều lúc mức độ cải thiện của bạn khi giải đề thi trên sách cũng hạn chế hơn rất nhiều.</p>
-                <img class="wow animate__zoomIn" src="images/luyenthitoeic.png" alt="image"/>
-                <p class="wow animate__backInUp">Việc giải đề thi TOEIC trong quá trình luyện thi cần được dành nhiều thời gian. Qua mỗi đề thi được giải, cần tìm ra lỗ hổng kiến thức của bản thân và tích trữ kiến thức từ những lỗi sai cơ bản nhất. Việc giải đề cần được tiến hành theo qua từng giai đoạn luyện thi, giúp phù hợp hơn với lượng kiến thức và đỡ nhàm chán khi giải.</p>
-                <p class="wow animate__backInUp">Bạn muốn củng cố vốn Tiếng Anh nhiều hơn hay muốn luyện tập thêm các kỹ năng cần thiết thì hãy đọc phần tiếp theo đây.</p>
-            </div>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-            <div class="paragraphP">
-                <h1><mark>LỘ TRÌNH LUYỆN THI TOEIC CHI TIẾT</mark></h1>
-                <p class="wow animate__backInUp">Điều mà tất cả các thí sinh Toeic quan tâm nhất đó là “Học gì để thi Toeic đạt kết quả cao và nên ôn gì” đúng không!</p>
-                <p class="wow animate__backInUp">Thông qua những kinh nghiệm mà nhiều năm qua AnhleEnghlish đã xây dựng lộ trình luyện thi TOEIC và chúng tôi đã đúc kết được tất cả những gì mà một thí sinh thi TOEIC cần học:</p>
-                <img class="wow animate__zoomIn" src="images/lotrinh.png" alt="image"/>
-                <ol type="1" class="sub" class="wow animate__backInUp"> 
-                    <li><b>Ngữ pháp trong TOEIC</b></li>
-                        <p class="wow animate__backInUp">Bạn cần học những ngữ pháp tiếng Anh nào để thi TOEIC đạt hiệu quả? Để trả lời được câu hỏi này, chúng ta xem thử bài thi TOEIC sẽ bao gồm có những nội dung gì?</p>
-                        <p class="wow animate__backInUp">Bài thi TOEIC là bài kiểm tra tiếng Anh đánh giá trình độ tiếng Anh trong các tình huống thường ngày trong môi trường làm việc quốc tế. Vì vậy, để đánh giá chính xác khả năng sử dụng tiếng Anh thuần thục và chính xác của thí sinh thì chắc chắn đề thi TOEIC sẽ bao gồm rất nhiều điểm ngữ pháp tiếng Anh đa dạng khác nhau.</p>
-                        <p class="wow animate__backInUp">Ngữ pháp TOEIC cũng chính là ngữ pháp Tiếng Anh thông thường mà chúng ta đã từng học tại trường, tuy nhiên vẫn có một vài điểm khác ở cấp độ, cấp sử dụng ngữ pháp đó. Bạn cần chuẩn bị những giáo trình ngữ pháp TOEIC bài bản, tránh học những gì không cần thiết mà nên học vào trọng tâm.Khi hiểu được ngữ pháp sẽ giúp bạn dễ dàng hiểu được ngữ pháp một cách nhanh chóng và ghi nhớ lâu hơn rất nhiều.</p>
-                    <li><b>Từ vựng TOEIC</b></li>
-                        <p class="wow animate__backInUp">Từ vựng Tiếng Anh thì rất nhiều, vậy khi luyện thi Toeic thì cần phải học những dạng từ vựng nào?</p>
-                        <p class="wow animate__backInUp">Các đề thi TOEIC đều xuất hiện các tình huống đa dạng, các trường hợp bao gồm mua sắm, ăn uống, gửi thư từ, cho đến các công việc công sở như kí hợp đồng, tuyển dụng, ra ngân hàng,… Từ vựng TOEIC cần phải được học theo những chuyên đề như vậy. Thứ nhất nó giúp bạn nhớ nghĩa nhanh chóng và các từ liên quan, thứ hai cắt giảm được thời gian học và thứ ba là giúp bạn nhớ lâu hơn. Sau đây sẽ là 2 phương pháp sau để học từ vựng Toeic mà bạn có thể tham khảo:</p>
-                        <p class="wow animate__backInUp">Cách 1:Học thông qua sách 600 Essential Words for the TOEIC</p>
-                        <p class="wow animate__backInUp">Quyển sách được rất nhiều người tin dùng bởi vì đã có nhiều kết quả thi Toeic đạt kết quả cao từ việc ôn sách này.</p>
-                        <p class="wow animate__backInUp">Cũng như kết quả mà nó đem lại cho người học thì ý nghĩa của cuốn sách này là: 600 từ vựng thông dụng trong Tiếng Anh. Tên sách đã nói lên tất cả, cuốn sách sẽ giúp bạn nắm vững được 600 từ vựng trong đề thi TOEIC, một con số khổng lồ trong thời gian ngắn. Ngoài ra, bạn có thể tham khảo thêm các phương pháp học từ vựng nâng cao giúp chinh phục từ vựng TOEIC một cách dễ dàng.</p>
-                        <p class="wow animate__backInUp">Cách 2: Học từ vựng thông qua việc luyện đề</p>
-                        <p class="wow animate__backInUp">Cách học này khá đơn giản, bạn chỉ cần làm đi làm lại các đề thi và nếu gặp từ ngữ nào chưa rõ nghĩa thì học ngay từ đó. Việc học từ qua luyện đề có thể sẽ mất thời gian cho việc ghi chép nhưng bù lại sẽ giúp bạn nhớ khá lâu.</p>
-                        <p class="wow animate__backInUp">Ngoài ra, từ vựng của bạn sẽ bám sát vào đề thi rất nhiều, khả năng gặp lại các từ vựng trong đề thi này là khá cao. Cách học này rất phổ biến và  có thể được áp dụng cho bất kì quá trình luyện đề tiếng Anh nào. Chớ quên các lưu ý mà AnhleEnghlish đã giới thiệu đến bạn trong việc học từ vựng.</p>
-                    <li><b>Kỹ năng nghe và luyện nghe trong TOEIC</b></li>
-                        <img class="wow animate__zoomIn" src="images/kinangnghe.png" alt="image"/>
-                        <p class="wow animate__backInUp">Phần nghe trong đề thi TOEIC gồm có 4 phần nhỏ:</p>
-                        <ul class="wow animate__backInUp">
-                            <li>Part 1</li>
-                            <li>Part 2</li>
-                            <li>Part 3</li>
-                            <li>Part 4</li>
-                        </ul>
-                        <p class="wow animate__backInUp">Cũng như phần nghe thì đối với phần đọc ngoài việc nắm vững ngữ pháp và nhiều tự vựng hơn thì bạn cần phải biết phương pháp làm phần đọc. Bởi vì phương pháp làm bài đọc TOEIC này  cũng chiếm 1 phần không hề nhỏ trong điểm số của bạn. Khoảng thời gian luyện thi thì dài nhưng khi bước vào phòng thi chỉ có 2h cho một bài thi nghe, tuy nhiên bạn cần phải nắm vững các phương pháp làm bài thi để tránh lãng phí thời gian. Vì vậy, mà các bạn cũng cần biết các chiến thuật và mẹo khi thi TOEIC</p>
-                        <p class="wow animate__backInUp">Mỗi phần đều có những dạng câu hỏi và các cách làm bài khác nhau. Để làm tốt được phần nghe trong TOEIC, ngoài việc nắm chắc các ngữ pháp và một lượng từ vựng đủ xài, cách phát âm chính xác thì bạn cần phải biết phương pháp làm bài trong phần nghe là yếu tố cần thiết hợp lí. </p>
-                    <li><b>Kỹ năng đọc trong TOEIC</b></li>
-                        <p class="wow animate__backInUp">Phần đọc trong đề thi TOEIC cũng gồm 3 phần: </p>
-                        <ul class="wow animate__backInUp">
-                            <li>Part 5</li>
-                            <li>Part 6</li>
-                            <li>Part 7</li>
-                        </ul>
-                        <p class="wow animate__backInUp">Cũng như phần nghe thì đối với phần đọc ngoài việc nắm vững ngữ pháp và nhiều tự vựng hơn thì bạn cần phải biết phương pháp làm phần đọc. Bởi vì phương pháp làm bài đọc TOEIC này  cũng chiếm 1 phần không hề nhỏ trong điểm số của bạn. Khoảng thời gian luyện thi thì dài nhưng khi bước vào phòng thi chỉ có 2h cho một bài thi nghe, tuy nhiên bạn cần phải nắm vững các phương pháp làm bài thi để tránh lãng phí thời gian. Vì vậy, mà các bạn cũng cần biết các chiến thuật và mẹo khi thi TOEIC</p>
-                </ol>
-            </div>
+    <!-- jQuery Easing (dùng cho smooth scroll) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 
-            <div class="paragraph">
-                <h1><mark>Chiến thuật và mẹo làm bài thi hiệu quả</mark></h1>
-                <ol type="1" class="sub" class="wow animate__backInUp">
-                    <li><b>Chiến thuật làm bài thi TOEIC</b></li>
-                        <p class="wow animate__backInUp">Việc mà bạn đã  trang bị các kiến thức ở trên thì đã giúp bạn đi được 90% tỉ lệ đạt điểm cao và 10% còn lại cũng khá là chông gai khi bạn cần phải điều tiết cảm xúc và sức khỏe trong quá trình làm bài thi </p>
-                        <p class="wow animate__backInUp">Để giúp bạn khắc phục được tâm lý này, nắm được quá trình thi TOEIC thật sẽ ra sao cũng như lưu ý trước và sau khi làm bài thi thì hãy cùng tìm hiểu cùng AnhleEnglish.</p>
-                        <p class="wow animate__backInUp">Khi đi thi thật tâm lí của nhiều bạn hay gặp phải đó là:</p>
-                        <ul class="wow animate__backInUp">
-                            <li>Cảm thấy hồi hộp và áp lực trong quá trình làm bài</li>
-                            <li>Không khí làm bài chưa được thích nghi</li>
-                            <li>Mệt mỏi khi làm bài liên tục và áp lực từng phần</li>
-                            <li>Vấn đề âm thanh của bài nghe không quen thuộc</li>
-                        </ul>
-                        <p class="wow animate__backInUp">Đây là những vấn đề mà bất cứ thí sinh nào cũng phải trải qua trong khi làm đề thi. Do đó, bạn cần chuẩn bị sẵn sàng tâm lí và chiến thuật từ trước để tránh các trở ngại khi thi làm ảnh hưởng đến kết quả.</p>
-                    <li><b>Mẹo làm bài thi TOEIC</b></li>
-                        <p class="wow animate__backInUp">Mặc dù mẹo làm bài thi không quyết định điểm số TOEIC của bạn nhưng nó là công cụ giúp bạn chọn đáp án một cách nhanh chóng nhất, tối ưu hóa thời gian và tránh gặp các trường hợp làm bài các lỗi sai đáng tiếc. Mẹo làm bài thi TOEIC đã được AnhleEnglish tổng hợp lại và được chia theo từng phần rõ ràng.</p>
-                </ol>
-            </div>
+    <!-- WOW.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
-            <div class="paragraphP">
-                <h1><mark>Kinh nghiệm luyện thi TOEIC tại nhà</mark></h1>
-                <p class="wow animate__backInUp">Chứng chỉ  TOEIC ngày càng quan trọng với sinh viên và người đi làm. Tuy nhiên không phải ai cũng có điều kiện để ôn thi tại trung tâm hoặc thuê gia sư. Nếu bạn chọn luyện thi TOEIC tại nhà thì bạn cần phải biết mình cần chuẩn bị gì và học như thế nào để thi hiệu quả. Sau đây sẽ là các bước tiến hành hợp lí cho việc ôn thi tại nhà:</p>
-                <ul class="sub">
-                    <li class="wow animate__backInUp">Chọn mục tiêu điểm số phù hợp</li>
-                    <li class="wow animate__backInUp">Tham khảo và tìm giáo trình phù hợp với trình độ</li>
-                    <li class="wow animate__backInUp">Chuẩn bị các công cụ và dụng cụ để luyện thi</li>
-                    <li class="wow animate__backInUp">Học các kỹ năng cần thiết trong  đề thi TOEIC</li>
-                    <li class="wow animate__backInUp">Tiến hành giải đề thường xuyên tại nhà</li>
-                </ul>
-                <p class="wow animate__backInUp">Trên đây là những kỹ năng và kinh nghiệm cần thiết giúp bạn luyện thi TOEIC một cách hiệu quả, dễ dàng đạt được mục tiêu của bản thân. Mong rằng những kiến thức mà AnhleEnglish mang đến sẽ giúp cho bạn một phần nào trong quá trình  chinh phục tấm bằng TOEIC trong thời gian ngắn nhất. Chúc bạn thành công.</p>
-            </div>
+    <!-- Custom JavaScript -->
+    <script src="JS/huongdan.js"></script>
+</head>
+<body>
+    <header id="top" class="head flex wow animate__slideInDown">
+        <div class="img wow animate__zoomInDown">
+            <img src="images/Banner.png" alt="TOEIC Banner"/>
+        </div>
+        <div class="wow animate__zoomInDown">
+            <h1>WEB LUYỆN THI TOEIC</h1>
+        </div>
+        <div></div>
+    </header>
 
-            <div>
-                <h1><mark>VIDEO LỘ TRÌNH LUYỆN THI TOEIC</mark></h1>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/1wfHY-iomic" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </section>
+    <section class="menu clearfix wow animate__lightSpeedInLeft">
+        <ul class="left">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="TOIEC Skills Practice.html"><i class="fa-solid fa-book"></i> TOEIC Skills Practicing</a></li>
+            <li><a href="#"><i class="fa-solid fa-lightbulb"></i> Tips</a></li>
+            <li><a href="#"><i class="fa-solid fa-book-open"></i> Hướng dẫn</a></li>
+        </ul>
+        <ul class="right">
+            <li><a href="Signin.html"><i class="fa-solid fa-arrow-right-to-bracket"></i> Đăng nhập</a></li>
+            <li><a href="loginSignup.html"><i class="fa-solid fa-id-card"></i> Đăng ký</a></li>
+        </ul>
+    </section>
 
-        <div class="backtop">
-            <a href="#top"><i class="fa-solid fa-arrow-up-long"></i></a>
+    <section class="content">
+        <div class="head wow animate__backInLeft">
+            <h1>LUYỆN THI TOEIC</h1>
+        </div>
+        
+        <div class="paragraphP colorbackground wow animate__flipInX">
+            <p>
+                Luyện thi TOEIC là một quá trình mà tất cả các sinh viên đều phải trải qua, đây như là điều kiện cần thiết để sinh viên ra trường. Vậy luyện thi TOEIC như thế nào cho đạt hiệu quả cao trong thời gian ngắn? Chúng ta nên luyện thi ở nhà hay ở trung tâm? Bạn đừng quá lo lắng! Bài viết sau đây, AnhleEnglish sẽ giải quyết hết tất cả các vấn đề bạn đang gặp phải khi không biết nên luyện thi TOEIC bắt đầu từ đâu.
+            </p>
         </div>
 
-        <footer class="last">
-            <div class="footer flex">
-                <div class="content1">
-                    <p>Trung tâm luyện thi TOEIC</p>
-                    <img src="images/chungchi.png" alt="imagefooter"/>
-                </div>
-                <div class="content2">
-                    <p>Các thông tin liên hệ</p>
-                    <ul>
-                        <li><i class="fa-solid fa-phone"></i>Hotline: 1900 xxx xxx</li>
-                        <li><i class="fa-solid fa-envelope"></i>Email:<a href="maito: luyenthitoeic@gmail.com">luyenthitoeic@gmail.com</a></li>
-                        <li><i class="fa-brands fa-facebook"></i>Facebook: <a href="#">facebook.com/luyenthitoeic</a></li>
-                        <li><i class="fa-solid fa-fax"></i>FAX: 0000-xxxx-xxxx</li>
-                    </ul>
-                </div>
-                <div></div>
+        <div class="paragraphP wow">
+            <h1><mark>Tổng quan về kỳ thi TOEIC</mark></h1>
+            <img src="images/tongquanvekithi.png" alt="Tổng quan kỳ thi TOEIC" class="wow animate__zoomIn"/>
+            <p class="wow animate__backInUp">TOEIC là bài thi đánh giá khả năng Tiếng Anh xuất phát từ Nhật Bản, cụ thể là tại cơ sở ETS vào năm 1979. Trải qua hơn 30 năm đến nay thì kỳ thi TOEIC đang dần phổ biến trên thế giới trong môi trường công sở. Theo số liệu mới nhất gần đây, tại Việt Nam có hơn 127 trường đại học, cao đẳng chọn TOEIC làm chuẩn đầu ra. Không chỉ dừng ở số liệu này mà hơn 350 doanh nghiệp tập đoàn còn dùng TOEIC làm chuẩn đánh giá tuyển dụng.</p>
+            <p class="wow animate__backInUp">TOEIC là chứng chỉ quốc tế về trình độ Tiếng Anh và có một số giá trị nhất định như:</p>
+            <ul class="wow animate__backInUp">
+                <li>Chứng chỉ giúp du học</li>
+                <li>Mở rộng cơ hội việc làm</li>
+                <li>Khả năng giao tiếp tiếng Anh</li>
+            </ul>
+            <p class="wow animate__backInUp">Ngoài ra, tiêu chuẩn đầu ra của các trường Đại học, Cao đẳng: Hiện nay, để đủ điều kiện ra trường thì chứng chỉ TOEIC là một điều kiện cần và đủ của hầu hết các bạn sinh viên. Các bạn phải đạt chứng chỉ TOEIC với số điểm từ 450 trở lên. Vì thế, có thể nói rằng chứng chỉ TOEIC có vai trò vô cùng quan trọng.</p>
+        </div>
+
+        <div class="paragraphP wow">
+            <h1><mark>Xác định trình độ tiếng Anh trước khi luyện thi TOEIC</mark></h1>
+            <p class="wow animate__backInUp">Để quá trình luyện thi TOEIC đạt hiệu quả cao, bạn cần xác định được trình độ Tiếng Anh của bản thân trước khi luyện thi TOEIC. Việc xác định chính xác trình độ trước khi luyện thi TOEIC sẽ giúp cho kế hoạch được lập ra rõ ràng và không mất quá nhiều thời gian, tài liệu giáo trình cũng phù hợp với bản thân hơn. Ngoài ra, việc chúng ta xác định trình độ Tiếng Anh mình đang như thế nào ngay từ đầu còn giúp bản thân nhận ra đâu là thế mạnh, đâu là điểm yếu bản thân cần cải thiện.</p>
+            <img class="wow animate__zoomIn" src="images/kiemtratoeic.png" alt="Kiểm tra TOEIC"/>
+            <p class="wow animate__backInUp">TOEIC là một kỳ thi sẽ có 2 kỹ năng cần thiết Nghe và Đọc Hiểu được xem là rất quan trọng. Và để xác định chính xác trình độ về TOEIC bạn có thể luyện tập các đề thi online có trên AnhleEnglish. Trong quá trình làm đề thi thử cần tự đánh giá ở một số mục sau:</p>
+            <ul class="wow animate__backInUp">
+                <li>Mức điểm TOEIC hiện tại của bạn là bao nhiêu → để biết số điểm đó cách mục tiêu của bạn là bao nhiêu</li>
+                <li>Trong TOEIC 4 kỹ năng, bạn đang có thế mạnh về phần nào → Phần nào yếu thì dành thời gian rèn luyện nhiều hơn</li>
+                <li>Từ vựng và ngữ pháp bạn đã nắm vững được bao nhiêu → để bổ sung những kiến thức còn thiếu</li>
+            </ul>
+            <p class="wow animate__backInUp">Sau khi làm đề thi thử TOEIC xong, nếu bạn cảm thấy mình đã đạt được mục tiêu thì có thể củng cố thêm kiến thức bằng các lỗi sai trong bài thi. Đề thi có xác suất câu nhất định theo trình độ từ dễ đến khó nên dù lần thi thử đạt được kết quả khả quan thì cũng chưa hẳn thi thật bạn sẽ đạt được kết quả cao như vậy.</p>
+            <p class="wow animate__backInUp">Và nếu như trường hợp kết quả thi thử quá tệ, thì bạn cần phải xác định các vấn đề chính như sau:</p>
+            <ul class="wow animate__backInUp">
+                <li>Kỹ năng nào là yếu nhất</li>
+                <li>Kỹ năng mạnh nhất mà bạn có</li>
+                <li>Lỗi sai hay gặp</li>
+                <li>Đưa ra lộ trình ôn thi TOEIC hiệu quả</li>
+                <li>Tiếp tục giải đề thi để xác định được thực lực bản thân</li>
+            </ul>
+        </div>
+
+        <div class="paragraphP wow">
+            <h1><mark>Luyện đề thi TOEIC</mark></h1>
+            <p class="wow animate__backInUp">Luyện giải đề thi TOEIC là cách hiệu quả nhất để bạn có thể tiếp cận và làm quen với đề thi nhiều hơn và áp dụng được những kiến thức Tiếng Anh của mình. Để luyện giải đề thi TOEIC, bạn có thể luyện giải bằng cách online, offline có thầy cô hướng dẫn hoặc đơn giản là giải đề thông qua sách.</p>
+            <p class="wow animate__backInUp">Hiện nay trên thị trường thì sách để giải đề thi TOEIC khá phổ biến. Nhưng có một nhược điểm khi mà bạn phải tự chấm điểm bằng tay và đôi lúc có nhiều cuốn sách chỉ đưa ra đáp án nhưng không hề giải thích tại sao lại lựa chọn đáp án đó, nên nhiều lúc mức độ cải thiện của bạn khi giải đề thi trên sách cũng hạn chế hơn rất nhiều.</p>
+            <img class="wow animate__zoomIn" src="images/luyenthitoeic.png" alt="Luyện thi TOEIC"/>
+            <p class="wow animate__backInUp">Việc giải đề thi TOEIC trong quá trình luyện thi cần được dành nhiều thời gian. Qua mỗi đề thi được giải, cần tìm ra lỗ hổng kiến thức của bản thân và tích trữ kiến thức từ những lỗi sai cơ bản nhất. Việc giải đề cần được tiến hành theo qua từng giai đoạn luyện thi, giúp phù hợp hơn với lượng kiến thức và đỡ nhàm chán khi giải.</p>
+            <p class="wow animate__backInUp">Bạn muốn củng cố vốn Tiếng Anh nhiều hơn hay muốn luyện tập thêm các kỹ năng cần thiết thì hãy đọc phần tiếp theo đây.</p>
+        </div>
+
+        <div class="paragraphP wow">
+            <h1><mark>Lộ trình luyện thi TOEIC chi tiết</mark></h1>
+            <p class="wow animate__backInUp">Điều mà tất cả các thí sinh TOEIC quan tâm nhất đó là “Học gì để thi TOEIC đạt kết quả cao và nên ôn gì” đúng không!</p>
+            <p class="wow animate__backInUp">Thông qua những kinh nghiệm mà nhiều năm qua AnhleEnglish đã xây dựng lộ trình luyện thi TOEIC và chúng tôi đã đúc kết được tất cả những gì mà một thí sinh thi TOEIC cần học:</p>
+            <img class="wow animate__zoomIn" src="images/lotrinh.png" alt="Lộ trình TOEIC"/>
+            <ol type="1" class="sub wow animate__backInUp">
+                <li><b>Ngữ pháp trong TOEIC</b></li>
+                <p class="wow animate__backInUp">Bạn cần học những ngữ pháp tiếng Anh nào để thi TOEIC đạt hiệu quả? Để trả lời được câu hỏi này, chúng ta xem thử bài thi TOEIC sẽ bao gồm có những nội dung gì?</p>
+                <p class="wow animate__backInUp">Bài thi TOEIC là bài kiểm tra tiếng Anh đánh giá trình độ tiếng Anh trong các tình huống thường ngày trong môi trường làm việc quốc tế. Vì vậy, để đánh giá chính xác khả năng sử dụng tiếng Anh thuần thục và chính xác của thí sinh thì chắc chắn đề thi TOEIC sẽ bao gồm rất nhiều điểm ngữ pháp tiếng Anh đa dạng khác nhau.</p>
+                <p class="wow animate__backInUp">Ngữ pháp TOEIC cũng chính là ngữ pháp Tiếng Anh thông thường mà chúng ta đã từng học tại trường, tuy nhiên vẫn có một vài điểm khác ở cấp độ, cấp sử dụng ngữ pháp đó. Bạn cần chuẩn bị những giáo trình ngữ pháp TOEIC bài bản, tránh học những gì không cần thiết mà nên học vào trọng tâm. Khi hiểu được ngữ pháp sẽ giúp bạn dễ dàng hiểu được ngữ pháp một cách nhanh chóng và ghi nhớ lâu hơn rất nhiều.</p>
+
+                <li><b>Từ vựng TOEIC</b></li>
+                <p class="wow animate__backInUp">Từ vựng Tiếng Anh thì rất nhiều, vậy khi luyện thi TOEIC thì cần phải học những dạng từ vựng nào?</p>
+                <p class="wow animate__backInUp">Các đề thi TOEIC đều xuất hiện các tình huống đa dạng, các trường hợp bao gồm mua sắm, ăn uống, gửi thư từ, cho đến các công việc công sở như ký hợp đồng, tuyển dụng, ra ngân hàng,… Từ vựng TOEIC cần phải được học theo những chuyên đề như vậy. Thứ nhất nó giúp bạn nhớ nghĩa nhanh chóng và các từ liên quan, thứ hai cắt giảm được thời gian học và thứ ba là giúp bạn nhớ lâu hơn.</p>
+                <p class="wow animate__backInUp">Sau đây sẽ là 2 phương pháp để học từ vựng TOEIC mà bạn có thể tham khảo:</p>
+                <p class="wow animate__backInUp"><b>Cách 1:</b> Học thông qua sách <i>600 Essential Words for the TOEIC</i></p>
+                <p class="wow animate__backInUp">Quyển sách được rất nhiều người tin dùng bởi vì đã có nhiều kết quả thi TOEIC đạt kết quả cao từ việc ôn sách này.</p>
+                <p class="wow animate__backInUp">Cũng như kết quả mà nó đem lại cho người học thì ý nghĩa của cuốn sách này là: 600 từ vựng thông dụng trong Tiếng Anh. Tên sách đã nói lên tất cả, cuốn sách sẽ giúp bạn nắm vững được 600 từ vựng trong đề thi TOEIC, một con số khổng lồ trong thời gian ngắn. Ngoài ra, bạn có thể tham khảo thêm các phương pháp học từ vựng nâng cao giúp chinh phục từ vựng TOEIC một cách dễ dàng.</p>
+                <p class="wow animate__backInUp"><b>Cách 2:</b> Học từ vựng thông qua việc luyện đề</p>
+                <p class="wow animate__backInUp">Cách học này khá đơn giản, bạn chỉ cần làm đi làm lại các đề thi và nếu gặp từ ngữ nào chưa rõ nghĩa thì học ngay từ đó. Việc học từ qua luyện đề có thể sẽ mất thời gian cho việc ghi chép nhưng bù lại sẽ giúp bạn nhớ khá lâu.</p>
+                <p class="wow animate__backInUp">Ngoài ra, từ vựng của bạn sẽ bám sát vào đề thi rất nhiều, khả năng gặp lại các từ vựng trong đề thi này là khá cao. Cách học này rất phổ biến và có thể được áp dụng cho bất kỳ quá trình luyện đề tiếng Anh nào. Chớ quên các lưu ý mà AnhleEnglish đã giới thiệu đến bạn trong việc học từ vựng.</p>
+
+                <li><b>Kỹ năng nghe và luyện nghe trong TOEIC</b></li>
+                <img class="wow animate__zoomIn" src="images/kinangnghe.png" alt="Kỹ năng nghe TOEIC"/>
+                <p class="wow animate__backInUp">Phần nghe trong đề thi TOEIC gồm có 4 phần nhỏ:</p>
+                <ul class="wow animate__backInUp">
+                    <li>Part 1</li>
+                    <li>Part 2</li>
+                    <li>Part 3</li>
+                    <li>Part 4</li>
+                </ul>
+                <p class="wow animate__backInUp">Mỗi phần đều có những dạng câu hỏi và các cách làm bài khác nhau. Để làm tốt được phần nghe trong TOEIC, ngoài việc nắm chắc các ngữ pháp và một lượng từ vựng đủ dùng, cách phát âm chính xác thì bạn cần phải biết phương pháp làm bài trong phần nghe là yếu tố cần thiết hợp lý.</p>
+
+                <li><b>Kỹ năng đọc trong TOEIC</b></li>
+                <p class="wow animate__backInUp">Phần đọc trong đề thi TOEIC cũng gồm 3 phần:</p>
+                <ul class="wow animate__backInUp">
+                    <li>Part 5</li>
+                    <li>Part 6</li>
+                    <li>Part 7</li>
+                </ul>
+                <p class="wow animate__backInUp">Cũng như phần nghe thì đối với phần đọc ngoài việc nắm vững ngữ pháp và nhiều từ vựng hơn thì bạn cần phải biết phương pháp làm phần đọc. Bởi vì phương pháp làm bài đọc TOEIC này cũng chiếm 1 phần không hề nhỏ trong điểm số của bạn. Khoảng thời gian luyện thi thì dài nhưng khi bước vào phòng thi chỉ có 2h cho một bài thi nghe, tuy nhiên bạn cần phải nắm vững các phương pháp làm bài thi để tránh lãng phí thời gian. Vì vậy, mà các bạn cũng cần biết các chiến thuật và mẹo khi thi TOEIC.</p>
+            </ol>
+        </div>
+
+        <div class="paragraph wow">
+            <h1><mark>Chiến thuật và mẹo làm bài thi hiệu quả</mark></h1>
+            <ol type="1" class="sub wow animate__backInUp">
+                <li><b>Chiến thuật làm bài thi TOEIC</b></li>
+                <p class="wow animate__backInUp">Việc mà bạn đã trang bị các kiến thức ở trên thì đã giúp bạn đi được 90% tỉ lệ đạt điểm cao và 10% còn lại cũng khá là chông gai khi bạn cần phải điều tiết cảm xúc và sức khỏe trong quá trình làm bài thi.</p>
+                <p class="wow animate__backInUp">Để giúp bạn khắc phục được tâm lý này, nắm được quá trình thi TOEIC thật sẽ ra sao cũng như lưu ý trước và sau khi làm bài thi thì hãy cùng tìm hiểu cùng AnhleEnglish.</p>
+                <p class="wow animate__backInUp">Khi đi thi thật tâm lý của nhiều bạn hay gặp phải đó là:</p>
+                <ul class="wow animate__backInUp">
+                    <li>Cảm thấy hồi hộp và áp lực trong quá trình làm bài</li>
+                    <li>Không khí làm bài chưa được thích nghi</li>
+                    <li>Mệt mỏi khi làm bài liên tục và áp lực từng phần</li>
+                    <li>Vấn đề âm thanh của bài nghe không quen thuộc</li>
+                </ul>
+                <p class="wow animate__backInUp">Đây là những vấn đề mà bất cứ thí sinh nào cũng phải trải qua trong khi làm đề thi. Do đó, bạn cần chuẩn bị sẵn sàng tâm lý và chiến thuật từ trước để tránh các trở ngại khi thi làm ảnh hưởng đến kết quả.</p>
+
+                <li><b>Mẹo làm bài thi TOEIC</b></li>
+                <p class="wow animate__backInUp">Mặc dù mẹo làm bài thi không quyết định điểm số TOEIC của bạn nhưng nó là công cụ giúp bạn chọn đáp án một cách nhanh chóng nhất, tối ưu hóa thời gian và tránh gặp các trường hợp làm bài các lỗi sai đáng tiếc. Mẹo làm bài thi TOEIC đã được AnhleEnglish tổng hợp lại và được chia theo từng phần rõ ràng.</p>
+            </ol>
+        </div>
+
+        <div class="paragraphP wow">
+            <h1><mark>Kinh nghiệm luyện thi TOEIC tại nhà</mark></h1>
+            <p class="wow animate__backInUp">Chứng chỉ TOEIC ngày càng quan trọng với sinh viên và người đi làm. Tuy nhiên không phải ai cũng có điều kiện để ôn thi tại trung tâm hoặc thuê gia sư. Nếu bạn chọn luyện thi TOEIC tại nhà thì bạn cần phải biết mình cần chuẩn bị gì và học như thế nào để thi hiệu quả. Sau đây sẽ là các bước tiến hành hợp lý cho việc ôn thi tại nhà:</p>
+            <ul class="sub wow animate__backInUp">
+                <li>Chọn mục tiêu điểm số phù hợp</li>
+                <li>Tham khảo và tìm giáo trình phù hợp với trình độ</li>
+                <li>Chuẩn bị các công cụ và dụng cụ để luyện thi</li>
+                <li>Học các kỹ năng cần thiết trong đề thi TOEIC</li>
+                <li>Tiến hành giải đề thường xuyên tại nhà</li>
+            </ul>
+            <p class="wow animate__backInUp">Trên đây là những kỹ năng và kinh nghiệm cần thiết giúp bạn luyện thi TOEIC một cách hiệu quả, dễ dàng đạt được mục tiêu của bản thân. Mong rằng những kiến thức mà AnhleEnglish mang đến sẽ giúp cho bạn một phần nào trong quá trình chinh phục tấm bằng TOEIC trong thời gian ngắn nhất. Chúc bạn thành công.</p>
+        </div>
+
+        <div class="paragraphP wow">
+            <h1><mark>Video lộ trình luyện thi TOEIC</mark></h1>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/iKyQzEsil3E?si=-ph7k1irg30mEL-c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            </div>
+        </div>
+    </section>
+
+    <div class="backtop">
+        <a href="#top"><i class="fa-solid fa-arrow-up-long"></i></a>
+    </div>
+
+    <footer class="last">
+        <div class="footer flex">
+            <div class="content1 wow animate__fadeInUp">
+                <p>Trung tâm luyện thi TOEIC</p>
+                <img src="images/chungchi.png" alt="Chứng chỉ TOEIC"/>
             </div>
-        </footer>
-    </body>
+            <div class="content2 wow animate__fadeInUp">
+                <p>Các thông tin liên hệ</p>
+                <ul>
+                    <li><i class="fa-solid fa-phone"></i> Hotline: 1900 xxx xxx</li>
+                    <li><i class="fa-solid fa-envelope"></i> Email: <a href="mailto:luyenthitoeic@gmail.com">luyenthitoeic@gmail.com</a></li>
+                    <li><i class="fa-brands fa-facebook"></i> Facebook: <a href="#">facebook.com/luyenthitoeic</a></li>
+                    <li><i class="fa-solid fa-fax"></i> FAX: 0000-xxxx-xxxx</li>
+                </ul>
+            </div>
+            <div></div>
+        </div>
+    </footer>
+</body>
 </html>

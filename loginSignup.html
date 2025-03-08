@@ -4,40 +4,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SIGN UP</title>
-    <link href="CSS/loginSignup.css" rel="stylesheet"/>
-    <link href="ConfirmSignup.html"><i class="signupbtn" rel="stylesheet">
-    <link href="ConfirmSignup.css" rel="stylesheet"/>
+    <title>Sign Up - TOEIC</title>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet"/>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
+
+    <link href="CSS/loginSignup.css" rel="stylesheet"/>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <script src="JS/huongdan.js"></script>
 </head>
 <body>
-    <form action="" > 
-        <div class="container">
-            <h1>Sign up</h1>
-            <p>Please enter your information below to sign up.</p>
-            <hr>
+    <!-- Header -->
+    <header id="top" class="head flex wow animate__slideInDown">
+        <div class="img wow animate__zoomInDown">
+            <img src="images/Banner.png" alt="TOEIC Banner">
+        </div>
+        <div class="title wow animate__zoomInDown">
+            <h1>Sign Up for TOEIC</h1>
+        </div>
+        <div></div>
+    </header>
 
-            <label for="email">
-                <b>Email</b>.
-            </label>
-            <input type="text"  placeholder="Please enter your email address" name="email" required>
-            <label for="psw">
-                <b>Password</b>
-            </label>
-                <input type="text"  placeholder="Please enter your password" name="password" required>
-            <label for="passwordRepeat">
-                <b>Password Again</b>
-            </label>
-                <input type="password" placeholder="Please enter your password again" name="passwordRepeat" required>
-            <label>
-                <input type="checkbox" checked="checked" name="remember" style="margin-bottom: 15px">Remember Login
-            </label>
+    <!-- Navigation Menu -->
+    <nav class="menu clearfix wow animate__lightSpeedInLeft">
+        <ul class="left">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="TOIEC Skills Practice.html"><i class="fa-solid fa-book"></i> TOEIC Skills Practicing</a></li>
+            <li><a href="#"><i class="fa-solid fa-lightbulb"></i> Tips</a></li>
+            <li><a href="Huongdan.html"><i class="fa-solid fa-book-open"></i> Hướng dẫn</a></li>
+        </ul>
+        <ul class="right">
+            <li><a href="Signin.html"><i class="fa-solid fa-arrow-right-to-bracket"></i> Sign in</a></li>
+            <li><a href="loginSignup.html"><i class="fa-solid fa-id-card"></i> Sign up</a></li>
+        </ul>
+    </nav>
 
-            <div class="clearfix">
-                <button type="button" onclick="openPopup" 
-            class="signupbtn"><a href="ConfirmSignup.html">Sign up</a></button> 
+    <!-- Main Content -->
+    <main class="signup-section">
+        <div class="container wow animate__fadeInUp">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>Sign Up</h2>
+                    <p>Please fill in your information to create a TOEIC account.</p>
+                </div>
+                <form action="ConfirmSignup.html" method="POST">
+                    <div class="input-form">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                    </div>
+                    <div class="input-form">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    </div>
+                    <div class="input-form">
+                        <label for="passwordRepeat">Confirm Password</label>
+                        <input type="password" id="passwordRepeat" name="passwordRepeat" placeholder="Enter your password again" required>
+                    </div>
+                    <div class="remember-login">
+                        <label><input type="checkbox" name="remember" checked> Remember me</label>
+                    </div>
+                    <div class="input-form">
+                        <button type="submit" class="signup-btn">Sign Up</button>
+                    </div>
+                </form>
+                <p class="signin-link">Already have an account? <a href="Signin.html">Sign in here</a></p>
             </div>
         </div>
-    </form>
+        <div class="img-bg wow animate__fadeInLeft">
+            <img src="images/OIP.jpg" alt="Background Image">
+        </div>
+    </main>
+
+    <!-- Back to Top Button -->
+    <div class="backtop">
+        <a href="#top"><i class="fa-solid fa-arrow-up-long"></i></a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer wow animate__fadeInUp">
+        <div class="lastimage">
+            <img src="images/toeicLast.png" alt="TOEIC Footer Image"/>
+        </div>
+        <div class="copyright">
+            <span>Copyright © 2021 by ETS. All rights reserved. ETS, the ETS logo, PROPELL, TOEIC and TOEIC BRIDGE are registered trademarks of ETS in the United States and other countries. All other trademarks are the property of their respective owners.</span>
+        </div>
+    </footer>
 </body>
 </html>

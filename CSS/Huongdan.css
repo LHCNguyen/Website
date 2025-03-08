@@ -1,221 +1,375 @@
-*{
-    font-family: Arial, Helvetica, sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif; /* Font hiện đại */
+    scroll-behavior: smooth; /* Cuộn mượt mà */
 }
 
-body{
-   background: linear-gradient(60deg,#AA96DA,#C5FAD5,#FFFFD2);
+body {
+    background: linear-gradient(45deg, #a1c4fd, #c2e9fb, #d4fc79); /* Gradient nền mềm mại */
+    color: #333;
 }
 
-.flex{
+/* Flexbox Utility */
+.flex {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
-header{
-    background: linear-gradient(60deg,#AA96DA,#C5FAD5);
-    padding: .5rem 1.5rem;
+/* Header */
+header {
+    background: linear-gradient(90deg, #a1c4fd, #c2e9fb); /* Gradient nhẹ nhàng */
+    padding: 1rem 3rem;
     align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    animation: slideDown 1s ease-in-out;
 }
+
+@keyframes slideDown {
+    0% { transform: translateY(-100%); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
 header.head > div > img {
-    width: 300px;
-    border-radius: 40%;
+    width: 200px; /* Giảm kích thước để cân đối */
+    border-radius: 50%; /* Bo tròn hoàn toàn */
+    transition: transform 0.5s ease;
 }
 
-header.head > div > h1{
-    font-size: 3rem;
-    padding: 0;
-    text-shadow: 5px 5px 5px wheat;
-    animation: colorBackground 0.5s infinite;
-         -webkit-animation: colorBackground 5s infinite;
-         -moz-animation: colorBackground 5s infinite;
-         -o-animation: colorBackground 0.5s infinite
+header.head > div > img:hover {
+    transform: scale(1.1) rotate(5deg); /* Hiệu ứng phóng to và xoay nhẹ */
 }
 
-
-@keyframes colorBackground {
-    0% {
-    background-color: rgb(67, 202, 67);
-    color: lightblue;
-    }
-    50% {
-    background-color: rgb(224, 91, 224);
-    color: rgb(96, 201, 233);
-    }
+header.head > div > h1 {
+    font-size: 2.5rem;
+    text-shadow: 3px 3px 6px rgba(255, 255, 255, 0.5);
+    animation: glowText 2s infinite;
 }
 
-section.menu{
-    background-color: rgba(14, 245, 226, 0.637);
+@keyframes glowText {
+    0% { color: #ff6b6b; text-shadow: 0 0 10px rgba(255, 107, 107, 0.8); }
+    50% { color: #feca57; text-shadow: 0 0 20px rgba(254, 202, 87, 0.8); }
+    100% { color: #ff6b6b; text-shadow: 0 0 10px rgba(255, 107, 107, 0.8); }
 }
 
-section.menu>ul{
+/* Menu */
+section.menu {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1rem 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+section.menu > ul {
     display: flex;
-    margin: 1px;
+    justify-content: center;
+    gap: 20px;
+    margin: 0;
 }
 
-.clearfix{
+section.menu > ul > li {
+    list-style-type: none;
+    text-align: center;
+}
+
+section.menu > ul > li > a {
+    display: block;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    position: relative;
     overflow: hidden;
 }
 
-.left{
-    margin: 0;
-    padding: 0;
+section.menu > ul > li > a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: 0.5s;
+}
+
+section.menu > ul > li > a:hover:before {
+    left: 100%;
+}
+
+section.menu > ul > li > a:hover {
+    background: #ff6b6b;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Clearfix Utility */
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.left {
     float: left;
 }
 
-.right{
+.right {
     float: right;
 }
 
-section.menu > ul >li{
-    list-style-type: none;
-    text-align: center;
-    min-width: 120px;
-    border-left: 1px solid white;
-    padding: 10px 15px;
+/* Content */
+.content {
+    width: 85%;
+    max-width: 1200px;
+    margin: 40px auto;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
-section.menu >ul >li >a {
-    padding: 15px 8px;
-    text-decoration: none;
-}
-
-.content{
-    width: 80%;
-    margin: 0 auto;
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
 }
 
 section.content > div > img {
-    margin-left: 200px;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
 }
 
 section.content > div > ol > img {
-    margin-left: 150px;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
 }
 
 div.head > h1 {
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3px;
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
-div.paragraphP > p{
-    margin: 0;
-    padding-top: 10px;
-    font-size: 20px;
+div.paragraphP > p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #555;
 }
 
-.colorbackground{
-    padding: 10px 30px;
-    background-color: lightgray;
+.colorbackground {
+    padding: 20px 40px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
-mark{
-    background: linear-gradient(#eb2188,white);
-    padding: 5px;
+mark {
+    background: linear-gradient(90deg, #ff6b6b, #feca57);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
 }
 
-div.colorbackground > p{
-    padding: 0;
-}
-div.paragraph > ul > li{
-    font-size: 20px;
-    padding: 10px;
-}
-
-.sub{
-    font-size: 20px;
+div.paragraph > ul > li {
+    font-size: 1.2rem;
+    padding: 10px 0;
+    list-style-type: none;
+    position: relative;
+    padding-left: 30px;
 }
 
-.last{
-    background: #384a58;
-    color: azure;
-    padding: 55px 50px;
+div.paragraph > ul > li:before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: #ff6b6b;
+    font-weight: bold;
 }
 
-.backtop > a{
-    text-decoration: none;
-    color: #fff;
-    width: 50px;
-    height: 50px;
-    align-items: center;
-    position: fixed;
-    bottom: 40px ;
-    right: 20px;
-    background: #9118c3;
-    border-radius: 50%;
-    justify-content: center;
-    display: flex;
+.sub {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Footer */
+.last {
+    background: linear-gradient(90deg, #2c3e50, #3498db); /* Gradient chân trang */
+    color: white;
+    padding: 60px 40px;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.2);
+}
+
+div.footer > div {
+    text-align: center;
+    flex: 1;
 }
 
 div.footer > div > img {
-    width: 50%;
+    width: 150px;
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+}
+
+div.footer > div > img:hover {
+    transform: scale(1.1) rotate(10deg);
 }
 
 div.footer > div > p {
-    margin-bottom: 0;
-    font-size: 2rem;
-    padding: 5px;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-weight: 600;
 }
 
-div.footer > div > ul > li
-{
-    padding: 6px;
+div.footer > div > ul > li {
+    padding: 8px 0;
 }
 
 div.footer > div > ul > li > a {
     text-decoration: none;
+    color: #d1e8ff;
+    transition: color 0.3s ease;
 }
 
-@media only screen and (max-width:46.1875em) {
-
-    section.content > div > img {
-        margin-left: 0;
-    }
-    
-    section.content > div > ol > img {
-        margin-left: 0;
-    }
-
-    .last{
-        background: #384a58;
-        color: azure;
-        padding: 1rem 1rem;
-    }
-
-    div.paragraphP > img{
-        width: 80%;
-    }
-
-    div.paragraphP > ol > li > img{
-        width: 50%;
-    }
-    
-    footer > div.footer {
-        display: flex;
-        width: 100%;
-    }
-
-    footer > div.footer > div > p{
-        width: 100%;
-    }
-
-    footer > div.footer > div > img {
-        width: 100%;
-    }
-
-    footer > div.footer > div.content1 {
-        width: 50%;
-    }
-
-    footer > div.footer > div.content2 {
-        width: 50%;
-    }
-
-}
-  
-@media only screen and (min-width:46.25em) and (max-width: 63.9375em) {
-    
+div.footer > div > ul > li > a:hover {
+    color: #ff6b6b;
 }
 
-  
+/* Back to Top */
+.backtop > a {
+    text-decoration: none;
+    color: white;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background: #ff6b6b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
+}
+
+.backtop > a:hover {
+    background: #e84118;
+    transform: rotate(360deg) scale(1.2);
+}
+
+/* Responsive */
+@media only screen and (max-width: 46.1875em) {
+    header {
+        padding: 1rem 1.5rem;
+    }
+
+    header.head > div > img {
+        width: 150px;
+    }
+
+    header.head > div > h1 {
+        font-size: 1.8rem;
+    }
+
+    section.menu > ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section.menu > ul > li > a {
+        padding: 10px;
+    }
+
+    .content {
+        width: 90%;
+    }
+
+    div.head > h1 {
+        font-size: 2rem;
+    }
+
+    div.paragraphP > p {
+        font-size: 1rem;
+    }
+
+    div.footer > div > p {
+        font-size: 1.5rem;
+    }
+
+    div.footer > div > img {
+        width: 100px;
+    }
+
+    .last {
+        padding: 30px 20px;
+    }
+}
+
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    header.head > div > img {
+        width: 180px;
+    }
+
+    header.head > div > h1 {
+        font-size: 2.2rem;
+    }
+
+    section.menu > ul {
+        gap: 15px;
+    }
+
+    .content {
+        width: 90%;
+    }
+}
+/* Responsive video container */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Tỷ lệ 16:9 */
+    height: 0;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* Hiệu ứng cho các hình ảnh */
+img.wow {
+    transition: transform 0.5s ease;
+}
+
+img.wow:hover {
+    transform: scale(1.05);
+}
+
+/* Đảm bảo footer responsive */
+@media only screen and (max-width: 46.1875em) {
+    .footer.flex {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .content1, .content2 {
+        width: 100%;
+        text-align: center;
+    }
+}
