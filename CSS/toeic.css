@@ -1,32 +1,32 @@
 * {
-    font-family: 'Poppins', Arial, Helvetica, sans-serif; /* Sử dụng font hiện đại */
+    font-family: 'Poppins', Arial, Helvetica, sans-serif; 
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth; /* Cuộn mượt mà */
+    scroll-behavior: smooth; 
 }
 
 body {
-    background: linear-gradient(180deg, #f0f2f5, #ffffff); /* Gradient nền nhẹ nhàng */
+    background: linear-gradient(180deg, #f0f2f5, #ffffff); 
 }
 
 .flex {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px; /* Khoảng cách giữa các phần tử */
+    gap: 20px;
 }
 
 /* Header */
 header {
-    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient đẹp hơn */
+    background: linear-gradient(135deg, #6a11cb, #2575fc); 
     padding: 1.5rem 3rem;
     align-items: center;
     color: white;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: space-between;
-    position: sticky; /* Sticky header */
+    position: sticky;
     top: 0;
     z-index: 1000;
     animation: headerSlideDown 1s ease-in-out;
@@ -44,7 +44,7 @@ header.head > div > img {
 }
 
 header.head > div > img:hover {
-    transform: scale(1.1) rotate(5deg); /* Hiệu ứng phóng to và xoay nhẹ */
+    transform: scale(1.1) rotate(5deg); 
 }
 
 header.head > div > h1 {
@@ -65,8 +65,13 @@ section.menu {
     padding: 15px 0;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     position: sticky;
-    top: 80px; /* Điều chỉnh theo chiều cao header */
+    top: 80px; 
     z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+    overflow-x: auto;
 }
 
 section.menu > ul {
@@ -77,7 +82,7 @@ section.menu > ul {
 
 section.menu > ul > li {
     list-style-type: none;
-    text-align: center;
+    display: inline-block;
 }
 
 section.menu > ul > li > a {
@@ -89,6 +94,7 @@ section.menu > ul > li > a {
     transition: all 0.4s ease;
     position: relative;
     overflow: hidden;
+    white-space: nowrap;
 }
 
 section.menu > ul > li > a:before {
@@ -99,7 +105,8 @@ section.menu > ul > li > a:before {
     width: 100%;
     height: 100%;
     background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-    transition: 0.5s;
+    transition: left 0.5s ease;
+    z-index: 1;
 }
 
 section.menu > ul > li > a:hover:before {
@@ -111,6 +118,10 @@ section.menu > ul > li > a:hover {
     color: white;
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+section.menu > ul > li > a > i {
+    margin-right: 8px;
 }
 
 /* Content */
@@ -223,4 +234,137 @@ footer > div > img {
 
 footer > div > img:hover {
     transform: rotate(10deg) scale(1.1);
+}
+
+/* Tối ưu cho màn hình nhỏ hơn 768px (tablet và điện thoại) */
+@media (max-width: 768px) {
+    /* Header */
+    header {
+        padding: 1rem 1.5rem; /* Giảm padding */
+        flex-direction: column; /* Chuyển sang dạng dọc */
+        text-align: center;
+    }
+
+    header.head > div > img {
+        width: 150px; /* Giảm kích thước logo */
+    }
+
+    header.head > div > h1 {
+        font-size: 1.8rem; /* Giảm kích thước chữ */
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Giảm độ đậm của shadow */
+    }
+
+    /* Menu */
+    section.menu {
+        top: 0; /* Điều chỉnh lại vị trí sticky */
+        padding: 10px 0;
+    }
+
+    section.menu > ul {
+        flex-direction: column; /* Chuyển menu thành dạng dọc */
+        gap: 10px; /* Giảm khoảng cách giữa các mục */
+    }
+
+    section.menu > ul > li > a {
+        padding: 10px 20px; /* Giảm padding của liên kết */
+        font-size: 0.9rem; /* Giảm kích thước chữ */
+    }
+
+    /* Content */
+    .content {
+        width: 95%; /* Tăng chiều rộng để tận dụng không gian */
+        margin: 20px auto; /* Giảm margin */
+    }
+
+    .content1 {
+        padding: 20px; /* Giảm padding */
+    }
+
+    .content1 > p > a {
+        padding: 10px 20px; /* Giảm padding của nút */
+        font-size: 0.9rem; /* Giảm kích thước chữ */
+    }
+
+    /* Product Section */
+    section.product {
+        padding: 30px 0; /* Giảm padding */
+    }
+
+    .box {
+        width: 90%; /* Đặt chiều rộng linh hoạt */
+        margin: 10px auto; /* Giảm margin và căn giữa */
+        padding: 20px; /* Giảm padding */
+        font-size: 16px; /* Giảm kích thước chữ */
+    }
+
+    /* Back to Top Button */
+    .backtop > a {
+        width: 50px; /* Giảm kích thước nút */
+        height: 50px;
+        bottom: 20px; /* Giảm khoảng cách từ dưới lên */
+        right: 20px; /* Giảm khoảng cách từ phải sang */
+        font-size: 0.9rem; /* Giảm kích thước chữ */
+    }
+
+    /* Footer */
+    footer {
+        flex-direction: column; /* Chuyển sang dạng dọc */
+        padding: 20px 0; /* Giảm padding */
+    }
+
+    footer > div {
+        padding: 10px; /* Giảm padding */
+    }
+
+    footer > div > img {
+        max-width: 100px; /* Giảm kích thước ảnh */
+    }
+}
+
+/* Tối ưu cho màn hình rất nhỏ (dưới 480px - điện thoại nhỏ) */
+@media (max-width: 480px) {
+    /* Header */
+    header.head > div > img {
+        width: 120px; /* Giảm kích thước logo hơn nữa */
+    }
+
+    header.head > div > h1 {
+        font-size: 1.5rem; /* Giảm kích thước chữ hơn nữa */
+    }
+
+    /* Menu */
+    section.menu > ul > li > a {
+        padding: 8px 15px; /* Giảm padding hơn nữa */
+        font-size: 0.8rem; /* Giảm kích thước chữ */
+    }
+
+    /* Content */
+    .content1 {
+        padding: 15px; /* Giảm padding hơn nữa */
+    }
+
+    .content1 > p > a {
+        padding: 8px 15px; /* Giảm padding của nút hơn nữa */
+        font-size: 0.8rem; /* Giảm kích thước chữ */
+    }
+
+    /* Product Section */
+    .box {
+        padding: 15px; /* Giảm padding hơn nữa */
+        font-size: 14px; /* Giảm kích thước chữ hơn nữa */
+    }
+
+    /* Back to Top Button */
+    .backtop > a {
+        width: 40px; /* Giảm kích thước nút hơn nữa */
+        height: 40px;
+        bottom: 15px;
+        right: 15px;
+        font-size: 0.8rem;
+    }
+
+    /* Footer */
+    footer > div > img {
+        max-width: 80px; /* Giảm kích thước ảnh hơn nữa */
+    }
 }
