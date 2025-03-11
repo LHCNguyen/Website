@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luyện Nghe TOEIC</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
+    
+    <link href="CSS/ListeningPractice.css" rel="stylesheet"/>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>new WOW().init();</script>
+</head>
+<body>
+    <header id="top" class="head flex wow animate__slideInDown">
+        <div class="img wow animate__zoomInDown">
+            <img src="images/Banner.png" alt="TOEIC Banner"/>
+        </div>
+        <div class="img wow animate__zoomInDown">
+            <h1>TOEIC EXAMINATION</h1>
+        </div>
+        <div></div>
+    </header>
+
+    <section class="menu clearfix wow animate__lightSpeedInLeft">
+        <ul class="left">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="TOIECSkillsPractice.html"><i class="fa-solid fa-book"></i> TOEIC Skills Practicing</a></li>
+            <li><a href="tips.html"><i class="fa-solid fa-lightbulb"></i> Tips</a></li>
+            <li><a href="Huongdan.html"><i class="fa-solid fa-book-open"></i> Hướng dẫn</a></li>
+            <li><a href="ListeningPractice.html"><i class="fa-solid fa-headphones"></i> Luyện nghe TOEIC</a></li>
+        </ul>
+        <ul class="right">
+            <li><a href="Signin.html"><i class="fa-solid fa-arrow-right-to-bracket"></i> Sign in</a></li>
+            <li><a href="loginSignup.html"><i class="fa-solid fa-id-card"></i> Sign up</a></li>
+        </ul>
+    </section>
+        <!-- Phần phát audio -->
+        <div class="audio-section">
+            <audio id="toeic-audio" controls>
+                <source src="audio/sample-audio.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <!-- Phần câu hỏi -->
+        <div class="question-section">
+            <h2>Câu hỏi 1: Where is Jane?</h2>
+            <form>
+                <label>
+                    <input type="radio" name="q1" value="a"> A) In the kitchen<br>
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="b"> B) In the living room<br>
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="c"> C) In the garage<br>
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="d"> D) In the garden<br>
+                </label>
+            </form>
+
+            <h2>Câu hỏi 2: What is she doing?</h2>
+            <form>
+                <label>
+                    <input type="radio" name="q2" value="a"> A) Playing the piano<br>
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="b"> B) Watching TV<br>
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="c"> C) Reading a book<br>
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="d"> D) Cooking dinner<br>
+                </label>
+            </form>
+
+            <h2>Câu hỏi 3: Where is the car?</h2>
+            <form>
+                <label>
+                    <input type="radio" name="q3" value="a"> A) In the street<br>
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="b"> B) In the driveway<br>
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="c"> C) In the garage<br>
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="d"> D) In front of the house<br>
+                </label>
+            </form>
+
+            <h2>Câu hỏi 4: Where is the dog?</h2>
+            <form>
+                <label>
+                    <input type="radio" name="q4" value="a"> A) In the backyard<br>
+                </label>
+                <label>
+                    <input type="radio" name="q4" value="b"> B) In the house<br>
+                </label>
+                <label>
+                    <input type="radio" name="q4" value="c"> C) In the garage<br>
+                </label>
+                <label>
+                    <input type="radio" name="q4" value="d"> D) In front of the door<br>
+                </label>
+            </form>
+
+            <h2>Câu hỏi 5: What is the dog doing?</h2>
+            <form>
+                <label>
+                    <input type="radio" name="q5" value="a"> A) Sleeping<br>
+                </label>
+                <label>
+                    <input type="radio" name="q5" value="b"> B) Eating<br>
+                </label>
+                <label>
+                    <input type="radio" name="q5" value="c"> C) Running<br>
+                </label>
+                <label>
+                    <input type="radio" name="q5" value="d"> D) Barking<br>
+                </label>
+            </form>
+
+            <h2>Câu hỏi 6: How does the husband ask where his wife is?</h2>
+            <form>
+                <label>
+                    <input type="radio" name="q6" value="a"> A) "Where are the kids?"<br>
+                </label>
+                <label>
+                    <input type="radio" name="q6" value="b"> B) "What are you doing?"<br>
+                </label>
+                <label>
+                    <input type="radio" name="q6" value="c"> C) "Where are you?"<br>
+                </label>
+                <label>
+                    <input type="radio" name="q6" value="d"> D) "Where is the cat?"<br>
+                </label>
+            </form>
+
+            <h2>Câu hỏi 7: How does the wife respond when her husband asks what she is doing?</h2>
+            <form>
+                <label>
+                    <input type="radio" name="q7" value="a"> A) "I am cooking dinner."<br>
+                </label>
+                <label>
+                    <input type="radio" name="q7" value="b"> B) "I am watching TV."<br>
+                </label>
+                <label>
+                    <input type="radio" name="q7" value="c"> C) "I am cleaning the house."<br>
+                </label>
+                <label>
+                    <input type="radio" name="q7" value="d"> D) "I am going shopping."<br>
+                </label>
+            </form>
+
+            <h2>Câu hỏi 8: Where are Bill and Mary?</h2>
+            <form>
+                <label>
+                    <input type="radio" name="q8" value="a"> A) In the dining room<br>
+                </label>
+                <label>
+                    <input type="radio" name="q8" value="b"> B) In the living room<br>
+                </label>
+                <label>
+                    <input type="radio" name="q8" value="c"> C) In the backyard<br>
+                </label>
+                <label>
+                    <input type="radio" name="q8" value="d"> D) In the car<br>
+                </label>
+            </form>
+
+            <h2>Câu hỏi 9: What are Bill and Mary doing?</h2>
+            <form>
+                <label>
+                    <input type="radio" name="q9" value="a"> A) Watching TV<br>
+                </label>
+                <label>
+                    <input type="radio" name="q9" value="b"> B) Reading books<br>
+                </label>
+                <label>
+                    <input type="radio" name="q9" value="c"> C) Playing chess<br>
+                </label>
+                <label>
+                    <input type="radio" name="q9" value="d"> D) Sleeping<br>
+                </label>
+            </form>
+
+            <h2>Câu hỏi 10: Where is the cat?</h2>
+            <form>
+                <label>
+                    <input type="radio" name="q10" value="a"> A) In the bedroom<br>
+                </label>
+                <label>
+                    <input type="radio" name="q10" value="b"> B) In the garage<br>
+                </label>
+                <label>
+                    <input type="radio" name="q10" value="c"> C) In the dining room<br>
+                </label>
+                <label>
+                    <input type="radio" name="q10" value="d"> D) Outside the house<br>
+                </label>
+            </form>
+
+            <h2>Câu hỏi 11: What is the cat doing?</h2>
+            <form>
+                <label>
+                    <input type="radio" name="q11" value="a"> A) Eating<br>
+                </label>
+                <label>
+                    <input type="radio" name="q11" value="b"> B) Sleeping<br>
+                </label>
+                <label>
+                    <input type="radio" name="q11" value="c"> C) Playing<br>
+                </label>
+                <label>
+                    <input type="radio" name="q11" value="d"> D) Running<br>
+                </label>
+            </form>
+
+            <h2>Topic: Location</h2>
+            <h2>Câu hỏi 12: Where is the school?</h2>
+            <form>
+                <label>
+                    <input type="radio" name="q12" value="a"> A) Next to the supermarket<br>
+                </label>
+                <label>
+                    <input type="radio" name="q12" value="b"> B) Between the library and the park<br>
+                </label>
+                <label>
+                    <input type="radio" name="q12" value="c"> C) Across from the movie theater<br>
+                </label>
+                <label>
+                    <input type="radio" name="q12" value="d"> D) In front of the gas station<br>
+                </label>
+            </form>
+
+            <h2>Câu hỏi 13: Where is the post office?</h2>
+            <form>
+                <label>
+                    <input type="radio" name="q13" value="a"> A) Near the church<br>
+                </label>
+                <label>
+                    <input type="radio" name="q13" value="b"> B) Behind the police station<br>
+                </label>
+                <label>
+                    <input type="radio" name="q13" value="c"> C) Across from the movie theater<br>
+                </label>
+                <label>
+                    <input type="radio" name="q13" value="d"> D) Next to the bank<br>
+                </label>
+            </form>
+
+            <h2>Câu hỏi 14: Where is the Royal Bank?</h2>
+            <form>
+                <label>
+                    <input type="radio" name="q14" value="a"> A) In front of the school<br>
+                </label>
+                <label>
+                    <input type="radio" name="q14" value="b"> B) Next to the supermarket<br>
+                </label>
+                <label>
+                    <input type="radio" name="q14" value="c"> C) Beside the hospital<br>
+                </label>
+                <label>
+                    <input type="radio" name="q14" value="d"> D) Across from the train station<br>
+                </label>
+            </form>
+
+            <h2>Câu hỏi 15: Where is the gas station?</h2>
+            <form>
+                <label>
+                    <input type="radio" name="q15" value="a"> A) Around the corner from the church<br>
+                </label>
+                <label>
+                    <input type="radio" name="q15" value="b"> B) Behind the library<br>
+                </label>
+                <label>
+                    <input type="radio" name="q15" value="c"> C) Near the park<br>
+                </label>
+                <label>
+                    <input type="radio" name="q15" value="d"> D) Next to the bus stop<br>
+                </label>
+            </form>
+
+            <h2>Câu hỏi 16: Where is the barbershop?</h2>
+            <form>
+                <label>
+                    <input type="radio" name="q16" value="a"> A) Across from the shopping mall<br>
+                </label>
+                <label>
+                    <input type="radio" name="q16" value="b"> B) Near the bus station<br>
+                </label>
+                <label>
+                    <input type="radio" name="q16" value="c"> C) Next to the bookstore<br>
+                </label>
+                <label>
+                    <input type="radio" name="q16" value="d"> D) Behind the restaurant<br>
+                </label>
+            </form>
+
+            <h2>Câu hỏi 17: How do you ask for directions to the nearest bank?</h2>
+            <form>
+                <label>
+                    <input type="radio" name="q17" value="a"> A) "Can you tell me how to get to the nearest bank?"<br>
+                </label>
+                <label>
+                    <input type="radio" name="q17" value="b"> B) "Where is the post office?"<br>
+                </label>
+                <label>
+                    <input type="radio" name="q17" value="c"> C) "Is there a gas station nearby?"<br>
+                </label>
+                <label>
+                    <input type="radio" name="q17" value="d"> D) "How much does the bus cost?"<br>
+                </label>
+            </form>
+
+            <h2>Câu hỏi 18: How does Ann respond when Scott asks for directions?</h2>
+            <form>
+                <label>
+                    <input type="radio" name="q18" value="a"> A) "I don’t know."<br>
+                </label>
+                <label>
+                    <input type="radio" name="q18" value="b"> B) "It’s on Geneva Street, and I am going that way myself."<br>
+                </label>
+                <label>
+                    <input type="radio" name="q18" value="c"> C) "Go straight ahead and turn left."<br>
+                </label>
+                <label>
+                    <input type="radio" name="q18" value="d"> D) "Take a taxi; it's far away."<br>
+                </label>
+            </form>
+
+            <h2>Câu hỏi 19: What color is the umbrella that Sera is looking for?</h2>
+            <form>
+                <label>
+                    <input type="radio" name="q19" value="a"> A) Red<br>
+                </label>
+                <label>
+                    <input type="radio" name="q19" value="b"> B) Blue<br>
+                </label>
+                <label>
+                    <input type="radio" name="q19" value="c"> C) Black<br>
+                </label>
+                <label>
+                    <input type="radio" name="q19" value="d"> D) Yellow<br>
+                </label>
+            </form>
+
+            <h2>Câu hỏi 20: What color umbrella does the shopkeeper offer?</h2>
+            <form>
+                <label>
+                    <input type="radio" name="q20" value="a"> A) Black<br>
+                </label>
+                <label>
+                    <input type="radio" name="q20" value="b"> B) Yellow<br>
+                </label>
+                <label>
+                    <input type="radio" name="q20" value="c"> C) Green<br>
+                </label>
+                <label>
+                    <input type="radio" name="q20" value="d"> D) White<br>
+                </label>
+            </form>
+
+            <h2>Câu hỏi 21: Why does Sera refuse the offered umbrella?</h2>
+            <form>
+                <label>
+                    <input type="radio" name="q21" value="a"> A) It is too expensive<br>
+                </label>
+                <label>
+                    <input type="radio" name="q21" value="b"> B) It is too big<br>
+                </label>
+                <label>
+                    <input type="radio" name="q21" value="c"> C) It is the wrong color<br>
+                </label>
+                <label>
+                    <input type="radio" name="q21" value="d"> D) It is broken<br>
+                </label>
+            </form>
+
+            <h2>Câu hỏi 22: What does the shopkeeper say about yellow umbrellas?</h2>
+            <form>
+                <label>
+                    <input type="radio" name="q22" value="a"> A) "They are very popular this year."<br>
+                </label>
+                <label>
+                    <input type="radio" name="q22" value="b"> B) "They are out of stock."<br>
+                </label>
+                <label>
+                    <input type="radio" name="q22" value="c"> C) "They are too expensive."<br>
+                </label>
+                <label>
+                    <input type="radio" name="q22" value="d"> D) "They are not good quality."<br>
+                </label>
+            </form>
+
+            <button type="button" onclick="checkAnswers()">Kiểm tra đáp án</button>
+    </div>
+
+        <!-- Phần kết quả -->
+        <div class="result-section" id="result">
+            <!-- Kết quả sẽ hiển thị ở đây -->
+        </div>
+    </div>
+
+    <footer>
+        <div class="lastimage">
+            <img src="images/toeicLast.png" alt="TOEIC Footer Image"/>
+        </div>
+        <div>
+            <span>Copyright © 2021 by ETS. All rights reserved. ETS, the ETS logo, PROPELL, TOEIC and TOEIC BRIDGE are registered trademarks of ETS in the United States and other countries. All other trademarks are the property of their respective owners.</span>
+        </div>
+    </footer>
+
+
+    <script src="JS/ListeningPractice.js"></script>
+</body>
+</html>
